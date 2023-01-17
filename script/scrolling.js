@@ -7,17 +7,17 @@ let [firstHeight,secondHeight,thirdHeight] = [$('#firstPage').offset().top,
  $('#secondPage').offset().top,
  $('#thirdPage').offset().top];
 
-$(document).scroll(e => {
+$(window).scroll(e => {
     let scrolled = $(window).scrollTop();
     // Если user поскроллил
     if (!autoScrolling) {
     	if (scrolled > 1 && currentLocation == 'firstPage') {
             scrollPage(secondHeight, 'secondPage');
-        } else if (scrolled > secondHeight + 1 && currentLocation == 'secondPage') {
+        } else if (scrolled > secondHeight && currentLocation == 'secondPage') {
             scrollPage(thirdHeight, 'thirdPage');
-        } else if (scrolled < thirdHeight - 1 && currentLocation == 'thirdPage') {
+        } else if (scrolled < thirdHeight && currentLocation == 'thirdPage') {
             scrollPage(secondHeight, 'secondPage');
-        } else if (scrolled < secondHeight - 1 && currentLocation == 'secondPage') {
+        } else if (scrolled < secondHeight && currentLocation == 'secondPage') {
             scrollPage(firstHeight, 'firstPage');
         }
     }
@@ -29,5 +29,5 @@ $(document).scroll(e => {
       });
     }
 })
-
 });
+

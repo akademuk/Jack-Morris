@@ -14,5 +14,8 @@ $(document).ready(function(){
     else { 
       $("#bg_popup").hide();
     }
+    $(".no").click(function () {
+      $("#bg_popupNo").show(); 
   });
+});
   

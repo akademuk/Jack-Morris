@@ -24,6 +24,109 @@ body {
     color: #262626;
     outline: none;
 }
+.close {
+  transition: all 0.3s;
+}
+.close:hover {
+  background: #714830;
+  transition: all 0.3s;
+}
+.close:active {
+  background: #391C0C;
+  transition: all 0.3s;
+}
+.no {
+  transition: all 0.3s;
+}
+.no:hover  {
+  background: rgba(255, 255, 255, 0.04);
+  transition: all 0.3s;
+}
+.no:active {
+  background: rgba(255, 255, 255, 0.04);
+  transition: all 0.3s;
+}
+header .basket{
+  transition: all 0.3s;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+.formSubmit {
+  transition: all 0.3s;
+}
+.formSubmit:hover {
+  background: #714830;
+  transition: all 0.3s;
+}
+.formSubmit:active {
+  background: #391C0C;
+  transition: all 0.3s;
+}
+header .basket:hover {
+  transition: all 0.3s;
+  background: #E3CCBF;
+  border: 4px solid rgba(255, 255, 255, 0.32);
+  border-radius: 4px;
+}
+.slidersPrev.slick-arrow {
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.slidersPrev.slick-arrow:hover {
+  transition: all 0.3s;
+  background: #E3CCBF;
+}
+.slidersPrev.slick-arrow:active{
+  transition: all 0.3s;
+  background: #AA826B;
+}
+.slidersNext.slick-arrow{
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.slidersNext.slick-arrow:hover {
+  transition: all 0.3s;
+  background: #E3CCBF;
+}
+.slidersNext.slick-arrow:active{
+  transition: all 0.3s;
+  background: #AA826B;
+}
+.sliderContent a {
+  transition: all 0.3s;
+}
+.sliderContent a:hover {
+  background: #714830;
+  transition: all 0.3s;
+}
+.sliderContent a:active {
+  background: #391C0C;
+  transition: all 0.3s;
+}
+.ReviewsslidersPrev.slick-arrow {
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.ReviewsslidersPrev.slick-arrow:hover {
+  transition: all 0.3s;
+  background: #E3CCBF;
+}
+.ReviewsslidersPrev.slick-arrow:active{
+  transition: all 0.3s;
+  background: #AA826B;
+}
+.ReviewsslidersNext.slick-arrow {
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.ReviewsslidersNext.slick-arrow:hover {
+  transition: all 0.3s;
+  background: #E3CCBF;
+}
+.ReviewsslidersNext.slick-arrow:active{
+  transition: all 0.3s;
+  background: #AA826B;
+}
 .banner,
 .shopping,
 .looks {
@@ -31,7 +134,7 @@ body {
   position: relative;
   width: 100%;
   overflow: hidden;
-  
+  height: 100vh;
 }
 .shopping {
   background: #fff;
@@ -290,7 +393,7 @@ header {
   line-height: 27px;
   text-transform: uppercase;
   color: #FFFFFF;
-  transition: all 0.3s;
+  transition: all 0.3s ease;
   padding-right: 24px;
 }
 .tab.active span{
@@ -307,7 +410,7 @@ header {
 }
 .tab:hover span {
   font-size: 23px;
-  transition: all 0.3s;
+  transition: all 0.3s ease;
 }
 .shoppingLeftContent {
   display: flex;
@@ -343,7 +446,11 @@ header {
   align-items: center;
   justify-content: center;
   padding: 10px 100px;
+  height: 70%;
   margin-bottom: 16px;
+}
+.shoppingLeftContentSectiontop360 img {
+  max-width: 90%;
 }
 .shoppingLeftContentSectionBottom {
   background:url(../img/Background.png), linear-gradient(0deg, #A4775B, #A4775B);
@@ -353,6 +460,7 @@ header {
   opacity: 0.85;
   padding: 8px 55px;
   border-radius: 4px;
+  margin-bottom: 30px;
 }
 .shoppingLeftContentSectionBottom h3 {
   display: flex;
@@ -374,7 +482,7 @@ header {
   padding: 8px 16px;
   background: #FAFAFA;
   border-radius: 4px;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
   display: flex;
   align-items: flex-start;
 }
@@ -455,7 +563,7 @@ header {
 .formNumber {
   display: flex;
   width: 100%;
-  margin-top: 32px;
+  margin-top: 16px;
 }
 .modifier_count {
   display: flex;
@@ -509,8 +617,10 @@ input::-webkit-inner-spin-button {
   background: transparent;
   font-family: 'Angsana-New';
   font-size: 100px;
-  line-height: 116px;
+  line-height: 100px;
   color: #262626;
+  width: 100%;
+  height: 100%;
 }
 #sum:before {
   content: "€";
@@ -1010,6 +1120,16 @@ input::-webkit-inner-spin-button {
   bottom: 0;
   left: 0;
   }
+  #bg_popupNo{
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    }
     
 #popup {
     display: flex;
@@ -1024,6 +1144,9 @@ input::-webkit-inner-spin-button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.marPop {
+  margin-bottom: 50px;
 }
 #popup h2 {
   font-size: 54px;
