@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style/slick.css">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Jack Morris</title>
+</head>
+<body>
+	<div id="bg_popup">
+		<div id="popup">
+			<img src="img/Logo.png" alt="Jack Morris">
+			<h2>Welcome to Jack Morris!</h2>
+			<p>You must be of legal age to view this page. <br>
+				Verify you are over 18 years of age?
+			</p>    
+			<div class="buttonsPopap">
+				<button id="setCookie" class="close" href="#" title="Закрыть" onclick="document.getElementById('bg_popup').style.display='none'; return false;">YES</button>
+				<button class="no">No</button>
+			</div>
+		</div>
+	</div>
+
+    <div class="banner" id="firstPage">
+		<header>
+			<ul class="navigation">
+				<li>
+					<a href="#Products">Products</a>
+				</li>
+				<li>
+					<a href="#Specification">Specification</a>
+				</li>
+				<li>
+					<a href="#Reviews">Reviews</a>
+				</li>
+			</ul>
+			<div class="logo">
+				<a href="#">
+					<img src="img/Logo.png" alt="">
+				</a>
+			</div>
+			<div class="basket">
+				<a href="#">
+					<img src="img/basket2.svg" alt="basket">
+				</a>
+			</div>
+		</header>
+		<div class="slideshow">
+			<div class="slider">
+			  <div class="item">
+				<img src="img/banner1.png" class="bannerImg"/>
+				<div class="sliderContent">
+					<p>to taste <br>
+						the best <br>
+						vapor
+					</p>
+					<a href="#">Buy now
+						<img src="img/basket.svg" alt="basket">
+					</a>
+				</div>
+			  </div>
+			  <div class="item">
+				<img src="img/banner2.png" class="bannerImg"/>
+				<div class="sliderContent sliderContentRight">
+					<p>a better<br>
+						life<br>
+					</p>
+					<a href="#">Buy now
+						<img src="img/basket.svg" alt="basket">
+					</a>
+				</div>
+			  </div>
+			  <div class="item">
+				<img src="img/banner1.png" class="bannerImg"/>
+				<div class="sliderContent">
+					<p>to taste <br>
+						the best <br>
+						vapor
+					</p>
+					<a href="#">Buy now
+						<img src="img/basket.svg" alt="basket">
+					</a>
+				</div>
+			  </div>
+			</div>
+			<div class="bannerSliderDots"></div>
+		  </div>
+    </div>
+	<!--Banner-->
+
+    <div class="shopping" id="secondPage">
+		<div class="shoppingLeftContent">
+			<h2>Electronic vape "Jack Morris" <br> Blueberry + ice | 3500 puffs</h2>
+			<span>in stock</span>
+			<div class="shoppingLeftContentSection">
+				<div class="shoppingLeftContentSectionLeft">
+					<div class="shoppingLeftContentSectiontop360">
+						<img src="img/360.png" alt="">
+					</div>
+					<div class="shoppingLeftContentSectionBottom">
+						<h3>
+							<img src="img/auto.svg" alt="">
+							Shipment within 24 hours
+						</h3>
+						<img src="img/bay.png" alt="bay">
+					</div>
+				</div>
+				<div class="shoppingLeftContentSectionRight">
+					<div class="originSection">
+						<img src="img/origin.svg" alt="100% ORIGINAL">
+						<div class="originSectionFlex">
+							<h4>100% ORIGINAL</h4>
+							<p>We only sell genuine products</p>
+						</div>
+					</div>
+					<form action="" class="shoppingForm">
+						<div class="shoppingFormNicotin">
+							<h4>
+								<img src="img/nicotin.svg" alt="nicotin">
+								Nicotine content
+							</h4>
+							<div class="shoppingFormRadio">
+								<div class="nicotinRadio">
+									<input type="radio" name="nicotin" id="5mg" checked>
+									<label for="5mg">5 MG</label>
+								</div>
+								<div class="nicotinRadio">
+									<input type="radio" name="nicotin" id="3mg">
+									<label for="3mg">3 MG</label>
+								</div>
+								<div class="nicotinRadio">
+									<input type="radio" name="nicotin" id="2mg">
+									<label for="2mg">2 MG</label>
+								</div>
+								<div class="nicotinRadio">
+									<input type="radio" name="nicotin" id="0mg">
+									<label for="0mg">0 MG</label>
+								</div>
+							</div>
+						</div>
+
+						<div class="formNumber">
+							<div class="modifier_count" onclick="minus_modifier_count_product();">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M3.33398 8H12.6673" stroke="#262626" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</div>
+								<input type="number" id="amount" placeholder="Количество" value="1" step="1">
+							<div class="modifier_count" onclick="plus_modifier_count_product();">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M8.66602 3.33317C8.66602 2.96498 8.36754 2.6665 7.99935 2.6665C7.63116 2.6665 7.33268 2.96498 7.33268 3.33317V7.33311L3.33268 7.33311C2.96449 7.33311 2.66602 7.63158 2.66602 7.99977C2.66602 8.36796 2.96449 8.66644 3.33268 8.66644L7.33268 8.66644V12.6665C7.33268 13.0347 7.63116 13.3332 7.99935 13.3332C8.36754 13.3332 8.66602 13.0347 8.66602 12.6665V8.66644L12.666 8.66644C13.0342 8.66644 13.3327 8.36797 13.3327 7.99978C13.3327 7.63159 13.0342 7.33311 12.666 7.33311L8.66602 7.33311V3.33317Z" fill="#262626"/>
+								</svg>
+							</div>
+						</div>
+
+						<div class="sum">
+							<input type="number" id="sum" placeholder="Количество" value="99" step="1" readonly>
+						</div>
+
+						<div class="formSubmit">
+							<input type="submit" value="Buy now" class="submitPopup">
+						</div>
+					</form>
+					<button class="submitPopup">Buy now</button>
+				</div>
+			</div>
+		</div>
+		<div class="shoppingRightContent">
+			<div class="shoppingRightContent_tabs">
+				<div class="tabs">
+					<span class="tab" style="background:#212739;">
+						<img src="img/shoppingIcon1.svg" alt="Blueberry + ice">
+						<span>Blueberry + ice</span>
+					</span>
+					<span class="tab" style="background: rgba(192, 52, 61, 0.5);">
+						<img src="img/shoppingIcon2.svg" alt="Watermelon + ice">
+						<span>Watermelon + ice</span>
+					</span>
+					<span class="tab" style="background: rgba(170, 130, 107, 0.5);">
+						<img src="img/shoppingIcon3.svg" alt="Tobacco">
+						<span>Tobacco</span>
+					</span>  
+					<span class="tab" style="background: rgba(49, 55, 122, 0.5);">
+						<img src="img/shoppingIcon4.svg" alt="Grape + ice">
+						<span>Grape + ice</span>
+					</span>
+					<span class="tab" style="background: rgba(144, 182, 102, 0.5);">
+						<img src="img/shoppingIcon5.svg" alt="Apple + ice">
+						<span>Apple + ice</span>
+					</span>
+					<span class="tab" style="background: rgba(183, 79, 101, 0.5);">
+						<img src="img/shoppingIcon6.svg" alt="Passion fruit + lemon">
+						<span>Passion fruit + lemon</span>
+					</span>  
+					<span class="tab" style="background: rgba(72, 49, 44, 0.5);">
+						<img src="img/shoppingIcon6.svg" alt="Cola + ice">
+						<span>Cola + ice</span>
+					</span>
+					<span class="tab" style="background: rgba(73, 77, 135, 0.5);">
+						<img src="img/shoppingIcon7.svg" alt="Blackberry + Raspberry">
+						<span>Blackberry + Raspberry</span>
+					</span>
+					<span class="tab" style="background: rgba(218, 103, 123, 0.5);">
+						<img src="img/shoppingIcon8.svg" alt="Peach + ice">
+						<span>Peach + ice</span>
+					</span>        
+				</div>
+			</div>
+			<div class="shoppingRightContent_content">
+				<div class="tab_item">
+					<img src="img/shoppingImg1.png" alt="Blueberry and ice">
+					<div class="tab_itemContent">
+						<h2>Blueberry and ice</h2>
+						<p>An explosive combination of blueberries and blood-curdling menthol combined into the perfect form of the Jack Morris vape system</p>
+					</div>
+				</div>
+				<div class="tab_item">
+					<img src="img/shoppingImg2.png" alt="Watermelon and ice">
+					<div class="tab_itemContent">
+						<h2>Watermelon and ice</h2>
+						<p>The unique combination of cool, refreshing watermelon and the cooling effect of ice cubes will give you an unforgettable Jack Morris vape experience.</p>
+					</div>
+				</div>
+				<div class="tab_item">
+					<img src="img/shoppingImg3.png" alt="Tobacco">
+					<div class="tab_itemContent">
+						<h2>Tobacco</h2>
+						<p>The best tobacco flavor for vaping! The classic combination of light woody notes and spicy aftertaste will not leave you indifferent</p>
+					</div>
+				</div>
+				<div class="tab_item">
+					<img src="img/shoppingImg4.png" alt="Grape and ice">
+					<div class="tab_itemContent">
+						<h2>Grape and ice</h2>
+						<p>Two grape varieties explode at once, combining in an excellent invigorating aroma. Refreshing ice effect will freeze you!</p>
+					</div>
+				</div>
+				<div class="tab_item">
+					<img src="img/shoppingImg5.png" alt="Apple and ice">
+					<div class="tab_itemContent">
+						<h2>Apple and ice</h2>
+						<p>The well-known apple will open up for you from a new side in combination with invigorating ice.</p>
+					</div>
+				</div>
+				<div class="tab_item">
+					<img src="img/shoppingImg6.png" alt="Passion fruit and Lemon">
+					<div class="tab_itemContent">
+						<h2>Passion fruit and Lemon</h2>
+						<p>Thick steam and intertwining aromas of passion fruit and lemon drives everyone crazy!</p>
+					</div>
+				</div>
+				<div class="tab_item">
+					<img src="img/shoppingImg7.png" alt="Cola and ice">
+					<div class="tab_itemContent">
+						<h2>Passion fruit and Lemon</h2>
+						<p>Cola with ice? This is the favorite of many! Enjoy the bright aroma of a familiar drink wherever you are!</p>
+					</div>
+				</div>
+				<div class="tab_item">
+					<img src="img/shoppingImg8.png" alt="Blackberry and Raspberry">
+					<div class="tab_itemContent">
+						<h2>Blackberry and Raspberry</h2>
+						<p>Juicy and sweet berries, so beloved and always relevant, will remind you of warmth in winter, and invigorate you in summer!</p>
+					</div>
+				</div>
+				<div class="tab_item">
+					<img src="img/shoppingImg9.png" alt="Peach and ice">
+					<div class="tab_itemContent">
+						<h2>Peach and ice</h2>
+						<p>Juicy peach - the pinnacle of pleasure, sweet and heady taste with thick steam is complemented by invigorating ice</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--Shopping-->
+
+	<div class="looks" id="thirdPage">
+		<div class="wrapper">
+			<div class="looksTable">
+				<div class="looksTableSection">
+					<ul class="tablecolor">
+						<li>Model</li>
+						<li>Puffs</li>
+						<li>Battery Capacity</li>
+						<li>E-Juice Capacity</li>
+						<li>Nicotine Strength</li>
+						<li>Resistance</li>
+					</ul>
+					<ul class="tablecolorWhite">
+						<li>J-M 3500 </li>
+						<li>3500 puffs </li>
+						<li>650mAh Rechargeable</li>
+						<li>15 ml</li>
+						<li>5%/3%/2%/0%</li>
+						<li> 1.8 ± 0.1 </li>
+					</ul>
+				</div>
+				<div class="looksTableSection">
+					<ul class="tablecolor">
+						<li>Material</li>
+						<li>Charging connector</li>
+						<li>Coil</li>
+						<li>Size</li>
+						<li>Net Weight</li>
+						<li>Equipment</li>
+					</ul>
+					<ul class="tablecolorWhite">
+						<li>PC+ABS+Aluminum</li>
+						<li>TYPE-C</li>
+						<li>Mesh</li>
+						<li>79x41x19mm</li>
+						<li>49 g</li>
+						<li>Device and packaging</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--Looks-->
+	
+	<div class="sliders">
+		<div class="slidersPrev">
+			<img src="img/arrowSlider.svg" alt="">
+		</div>
+		<div class="wrapper">
+			<div class="slidersContent">
+				<div class="slidersItem">
+					<img src="img/slider1.png" alt="">
+					<div class="sliderText">
+						<h3>AND LONGER ENJOY-TIME</h3>
+						<p>With powerful rechargeable battery</p>
+						<a href="#">Buy now
+							<img src="img/basket.svg" alt="basket">
+						</a>
+					</div>
+				</div>
+				<div class="slidersItem">
+					<img src="img/slider2.png" alt="">
+					<div class="sliderText">
+						<h3>AND MINIMALIST DESIGN</h3>
+						<a href="#">Buy now
+							<img src="img/basket.svg" alt="basket">
+						</a>
+					</div>
+				</div>
+				<div class="slidersItem">
+					<img src="img/slider1.png" alt="">
+					<div class="sliderText">
+						<h3>AND LONGER ENJOY-TIME</h3>
+						<p>With powerful rechargeable battery</p>
+						<a href="#">Buy now
+							<img src="img/basket.svg" alt="basket">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="slidersNext">
+			<img src="img/arrowSlider.svg" alt="">
+		</div>
+	</div>
+	<!--Sliders-->
+
+	<div class="information">
+		<div class="wrapper">
+			<div class="informationTop">
+				<a href="#">
+					<img src="img/Logo.png" alt="Jack Morris">
+				</a>
+				<p>Vape products have always been close to us and we have been dealing with them on a business level for over 2 years. Now we are finally making it available to you in Europe a wide range of stylish and exclusive Jack Morris. Take a look at our webshop and choose your favourite from a wide range of flavours. Feel free to contact us with any questions via phone and email.</p>
+			</div>
+			<div class="informationBottom">
+				<div class="informationBottomSection">
+					<img src="img/infoIcons1.svg" alt="">
+					<h3>FAST DELIVERY</h3>
+					<p>We deliver the package within 1-4 working days</p>
+				</div>
+
+				<div class="informationBottomSection">
+					<img src="img/infoIcons2.svg" alt="">
+					<h3>100% ORIGINAL</h3>
+					<p>We only sell genuine products</p>
+				</div>
+
+				<div class="informationBottomSection">
+					<img src="img/infoIcons3.svg" alt="">
+					<h3>SECURE CHECKOUT</h3>
+					<p>In our website you can pay securely with a credit card or cash on delivery</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--Information-->
+
+	<div class="productReviews">
+		<div class="ReviewsslidersPrev">
+			<img src="img/arrowSlider.svg" alt="">
+		</div>
+		<div class="wrapper">
+			<h2>Product reviews</h2>
+			<img src="img/“.svg" alt="">
+			<div class="productReviewsSlider">
+				<div class="productReviewsSliderItem">
+					<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage.</p>
+					<img src="img/avatar.png" alt="James Toriff">
+					<h4>James Toriff</h4>
+				</div>
+				<div class="productReviewsSliderItem">
+					<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage.</p>
+					<img src="img/avatar.png" alt="James Toriff">
+					<h4>James Toriff</h4>
+				</div>
+				<div class="productReviewsSliderItem">
+					<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage.</p>
+					<img src="img/avatar.png" alt="James Toriff">
+					<h4>James Toriff</h4>
+				</div>
+				<div class="productReviewsSliderItem">
+					<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage.</p>
+					<img src="img/avatar.png" alt="James Toriff">
+					<h4>James Toriff</h4>
+				</div>
+			</div>
+			<div class="productReviewsDots"></div>
+		</div>
+		<div class="ReviewsslidersNext">
+			<img src="img/arrowSlider.svg" alt="">
+		</div>
+	</div>
+	<!--Product Reviews-->
+
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footerTop">
+				<a href="#">
+					<img src="img/Logo2.png" alt="Jack Morris">
+				</a>
+				<ul class="navigationFooter">
+					<li>
+						<a href="#">Products</a>
+					</li>
+					<li>
+						<a href="#">Specification</a>
+					</li>
+					<li>
+						<a href="#">Reviews</a>
+					</li>
+					<li>
+						<a href="#">Contacts</a>
+					</li>
+					<li class="basketFooter">
+						<a href="#">Buy now
+							<img src="img/basket.svg" alt="basket">
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footerBottom">
+				<div class="footerBottomLeft">
+					<p>Copyright © 2021 UI8 LLC. All rights reserved</p>
+					<a href="#">Privacy Policy</a>
+					<a href="#">Team of Use</a>
+				</div>
+				<div class="footerBottomCenter">
+					<ul>
+						<li>
+							<img src="img/Visa.png" alt="Visa">
+						</li>
+						<li>
+							<img src="img/Mastercard.png" alt="Mastercard">
+						</li>
+						<li>
+							<img src="img/PayPal.png" alt="PayPal">
+						</li>
+						<li>
+							<img src="img/Payoneer.png" alt="Payoneer">
+						</li>
+					</ul>
+				</div>
+				<div class="footerBottomRight">
+					<p>We use cookies for better service.</p>
+					<button>Accept</button>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--Footer-->
+
+	<section class="step1">
+		<div class="popup__content">
+		  <div class="closer">
+			<img src="img/close.svg" alt="close">
+		  </div>
+		  <div class="popupContents">
+			<div class="popupContentsLeft">
+				<button class="closer buttonPrev">
+					<img src="img/arrowSlider.svg" alt="">
+					Continue shopping
+				</button>
+				<div class="stepsContainer">
+					<div class="stepsContainerSection">
+						<p class="nuberStep">1</p>
+						<p class="textStep">Shopping cart</p>
+					</div>
+
+					<div class="stepsContainerSection opacityStep">
+						<p class="nuberStep">2</p>
+						<p class="textStep">Checkout details</p>
+					</div>
+
+					<div class="stepsContainerSection opacityStep">
+						<p class="nuberStep">3</p>
+						<p class="textStep">Order complete</p>
+					</div>
+				</div>
+				<h2>Cart</h2>
+				<div class="cartInfo">
+					<div class="overflowS">
+					<div class="cartInfoSection">
+						<button class="closeContainer">
+							<img src="img/iconsClose.svg" alt="Close">
+						</button>
+						<img src="img/Graphic1.png" alt="">
+						<div class="cartInfoSectionPrice">
+							<p>Electronic vape "Jack Morris" Blueberry + <br> ice | 3500 puffs</p>
+							<div class="cartInfoSectionPriceFlex">
+								<p>5 MG</p>
+								<p>$99.00</p>
+							</div>
+						</div>
+						<div class="numberCounter">
+							<div class="numberCounterS">
+								<input type="number" id="amounts" placeholder="Количество" value="1" step="1">
+							</div>
+							<div class="numberCounter2">
+								<div class="modifier_count" onclick="plus_modifier_count_product();">
+									<img src="img/arrowS.svg" alt="">
+								</div>
+								<div class="modifier_count modifier_countRotate" onclick="minus_modifier_count_product();">
+									<img src="img/arrowS.svg" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="numbersPrice">
+							<input type="number" id="sums" placeholder="Количество" value="99" step="1" readonly>
+						</div>
+					</div>
+					<div class="cartInfoSection">
+						<button class="closeContainer">
+							<img src="img/iconsClose.svg" alt="Close">
+						</button>
+						<img src="img/Graphic2.png" alt="">
+						<div class="cartInfoSectionPrice">
+							<p>Electronic vape "Jack Morris" Blueberry + <br> ice | 3500 puffs</p>
+							<div class="cartInfoSectionPriceFlex">
+								<p>5 MG</p>
+								<p>$99.00</p>
+							</div>
+						</div>
+						<div class="numberCounter">
+							<div class="numberCounterS">
+								<input type="number" id="amounts" placeholder="Количество" value="1" step="1">
+							</div>
+							<div class="numberCounter2">
+								<div class="modifier_count" onclick="plus_modifier_count_product();">
+									<img src="img/arrowS.svg" alt="">
+								</div>
+								<div class="modifier_count modifier_countRotate" onclick="minus_modifier_count_product();">
+									<img src="img/arrowS.svg" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="numbersPrice">
+							<input type="number" id="sums" placeholder="Количество" value="99" step="1" readonly>
+						</div>
+					</div>
+					<div class="cartInfoSection">
+						<button class="closeContainer">
+							<img src="img/iconsClose.svg" alt="Close">
+						</button>
+						<img src="img/Graphic1.png" alt="">
+						<div class="cartInfoSectionPrice">
+							<p>Electronic vape "Jack Morris" Blueberry + <br> ice | 3500 puffs</p>
+							<div class="cartInfoSectionPriceFlex">
+								<p>5 MG</p>
+								<p>$99.00</p>
+							</div>
+						</div>
+						<div class="numberCounter">
+							<div class="numberCounterS">
+								<input type="number" id="amounts" placeholder="Количество" value="1" step="1">
+							</div>
+							<div class="numberCounter2">
+								<div class="modifier_count" onclick="plus_modifier_count_product();">
+									<img src="img/arrowS.svg" alt="">
+								</div>
+								<div class="modifier_count modifier_countRotate" onclick="minus_modifier_count_product();">
+									<img src="img/arrowS.svg" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="numbersPrice">
+							<input type="number" id="sums" placeholder="Количество" value="99" step="1" readonly>
+						</div>
+					</div>
+					<div class="cartInfoSection">
+						<button class="closeContainer">
+							<img src="img/iconsClose.svg" alt="Close">
+						</button>
+						<img src="img/Graphic2.png" alt="">
+						<div class="cartInfoSectionPrice">
+							<p>Electronic vape "Jack Morris" Blueberry + <br> ice | 3500 puffs</p>
+							<div class="cartInfoSectionPriceFlex">
+								<p>5 MG</p>
+								<p>$99.00</p>
+							</div>
+						</div>
+						<div class="numberCounter">
+							<div class="numberCounterS">
+								<input type="number" id="amounts" placeholder="Количество" value="1" step="1">
+							</div>
+							<div class="numberCounter2">
+								<div class="modifier_count" onclick="plus_modifier_count_product();">
+									<img src="img/arrowS.svg" alt="">
+								</div>
+								<div class="modifier_count modifier_countRotate" onclick="minus_modifier_count_product();">
+									<img src="img/arrowS.svg" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="numbersPrice">
+							<input type="number" id="sums" placeholder="Количество" value="99" step="1" readonly>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+			<div class="popupContentsRight">
+				<h2>Cart totals</h2>
+				<div class="popupContentsRightContent">
+					<div class="popupContentsSection1">
+						<p>Subtotal</p>
+						<p>$297.00</p>
+					</div>
+					<div class="popupContentsDelivery">
+						<p>Delivery service</p>
+						<img src="img/add.svg" alt="add">
+					</div>
+					<div class="popupContentsDetailed">
+						<p>Detailed terms of delivery</p>
+						<img src="img/arrowPop.svg" alt="arrow">
+					</div>
+					<form action="">
+						<div class="PaymentMethod">
+							<p>Payment method</p>
+							<div class="PaymentMethodContainer">
+								<label for="PayPal">
+									PayPal
+									<input type="radio" name="method" id="PayPal" checked>
+								</label>
+								<label for="PayPal">
+									Crypto
+									<input type="radio" name="method" id="Crypto">
+								</label>
+							</div>
+						</div>
+						<div class="popupContentsSection1 pad">
+							<p>Total</p>
+							<p class="bold">$314.00</p>
+						</div>
+					</form>
+					<button class="btnStep1">Proceed to checkout
+						<img src="img/arrowNexts.svg" alt="">
+					</button>
+				</div>
+			</div>
+		  </div>
+	  		
+		</div>
+	</section>
+	<!--Shopping Cart Pop-up STEP 1-->
+
+	<section class="step2">
+		<div class="popup__content">
+			<div class="closer2">
+				<img src="img/close.svg" alt="close">
+			</div>
+			<div class="popupContents">
+				<div class="popupContentsLeft">
+					<button class="closerPrev buttonPrev">
+						<img src="img/arrowSlider.svg" alt="">
+						Your Cart
+					</button>
+					<div class="stepsContainer">
+						<div class="stepsContainerSection opacityStep greenborder">
+							<img src="img/extension.svg" alt="">
+							<p>Shopping cart</p>
+						</div>
+	
+						<div class="stepsContainerSection">
+							<p class="nuberStep">2</p>
+							<p class="textStep">Checkout details</p>
+						</div>
+	
+						<div class="stepsContainerSection opacityStep">
+							<p class="nuberStep">3</p>
+							<p class="textStep">Order complete</p>
+						</div>
+					</div>
+					<h2>Shipping address</h2>
+					<form action="" class="step2Form">
+						<input type="text" placeholder="First name">
+						<input type="text" placeholder="Last name">
+						<input type="email" placeholder="Email">
+						<input type="number" placeholder="Phone">
+						<select name="" id="" >
+							<option value="">Country</option>
+							<option value="">Country</option>
+							<option value="">Country</option>
+						</select>
+						<select name="" id="" >
+							<option value="">City</option>
+							<option value="">City</option>
+							<option value="">City</option>
+						</select>
+						<input type="text" placeholder="Street">
+						<input type="text" placeholder="Postcode">
+					</form>
+				</div>
+				<div class="popupContentsRight">
+					<h2>Your order</h2>
+					<div class="popupContentsRightStep2">
+						<div class="popupContentSectionStep2">
+							<div class="popupStep2Left">
+								<p>Electronic vape "Jack Morris" Blueberry + ice | 3500 puffs</p>
+								<div class="cartInfoSectionPriceFlex">
+									<p>5 MG</p>
+									<p>$99.00</p>
+								</div>
+							</div>
+							<div class="popupStep2Right">
+								<p class="popupStep2Righttext1">X1</p>
+								<p class="popupStep2Righttext2">$99.00</p>
+							</div>
+						</div>
+						<div class="popupContentSectionStep2">
+							<div class="popupStep2Left">
+								<p>Electronic vape "Jack Morris" Blueberry + ice | 3500 puffs</p>
+								<div class="cartInfoSectionPriceFlex">
+									<p>5 MG</p>
+									<p>$99.00</p>
+								</div>
+							</div>
+							<div class="popupStep2Right">
+								<p class="popupStep2Righttext1">X1</p>
+								<p class="popupStep2Righttext2">$99.00</p>
+							</div>
+						</div>
+						<div class="popupContentSectionStep2">
+							<div class="popupStep2Left">
+								<p>Electronic vape "Jack Morris" Blueberry + ice | 3500 puffs</p>
+								<div class="cartInfoSectionPriceFlex">
+									<p>5 MG</p>
+									<p>$99.00</p>
+								</div>
+							</div>
+							<div class="popupStep2Right">
+								<p class="popupStep2Righttext1">X1</p>
+								<p class="popupStep2Righttext2">$99.00</p>
+							</div>
+						</div>
+						<div class="popupContentSectionStep2">
+							<div class="popupStep2Left">
+								<p>Electronic vape "Jack Morris" Blueberry + ice | 3500 puffs</p>
+								<div class="cartInfoSectionPriceFlex">
+									<p>5 MG</p>
+									<p>$99.00</p>
+								</div>
+							</div>
+							<div class="popupStep2Right">
+								<p class="popupStep2Righttext1">X1</p>
+								<p class="popupStep2Righttext2">$99.00</p>
+							</div>
+						</div>
+						<div class="popupContentSectionStep2">
+							<div class="popupStep2Left">
+								<p>Electronic vape "Jack Morris" Blueberry + ice | 3500 puffs</p>
+								<div class="cartInfoSectionPriceFlex">
+									<p>5 MG</p>
+									<p>$99.00</p>
+								</div>
+							</div>
+							<div class="popupStep2Right">
+								<p class="popupStep2Righttext1">X1</p>
+								<p class="popupStep2Righttext2">$99.00</p>
+							</div>
+						</div>
+						<button class="btnStep2">Place Order
+							<img src="img/like.svg" alt="">
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--Shopping Cart Pop-up STEP 2-->
+
+	<section class="step3">
+		<div class="popup__content">
+			<div class="closer3">
+				<img src="img/close.svg" alt="close">
+			</div>
+			<button class="buttonPrev3">
+				<img src="img/arrowSlider.svg" alt="">
+				Get home
+			</button>
+			<div class="stepsContainer">
+				<div class="stepsContainerSection greenborder">
+					<img src="img/extension.svg" alt="">
+					<p>Shopping cart</p>
+				</div>
+
+				<div class="stepsContainerSection greenborder">
+					<img src="img/extension.svg" alt="">
+					<p class="textStep">Checkout details</p>
+				</div>
+
+				<div class="stepsContainerSection">
+					<p class="nuberStep">
+						<img src="img/like.svg" alt="">
+					</p>
+					<p class="textStep">Order complete</p>
+				</div>
+			</div>
+			<div class="popup__contentContent2">
+				<div class="popup__contentContent2Scroll">
+					<div class="popup__contentContent2Left">
+						<h2>Thank you! 🎉</h2>
+						<p>Your order has been received</p>
+						<div class="popup__contentContent2LeftImg">
+							<div class="popup__contentContent2LeftImgSection">
+								<img src="img/Graphic1.png" alt="">
+								<p>5 MG</p>
+								<span class="blue">1</span>
+							</div>
+							<div class="popup__contentContent2LeftImgSection">
+								<img src="img/Graphic2.png" alt="">
+								<p>3 MG</p>
+								<span class="rose">2</span>
+							</div>
+							<div class="popup__contentContent2LeftImgSection">
+								<img src="img/Graphic1.png" alt="">
+								<p>3 MG</p>
+								<span class="blue">2</span>
+							</div>
+							<div class="popup__contentContent2LeftImgSection ">
+								<img src="img/Graphic2.png" alt="">
+								<p>5 MG</p>
+								<span class="rose">2</span>
+							</div>
+						</div>
+						<div class="step3Information">
+							<ul class="step3Information1">
+								<li>
+									<img src="img/IconBASE1.svg" alt="">
+									Order code:
+								</li>
+								<li>
+									<img src="img/IconBASE2.svg" alt="">
+									Date:
+								</li>
+								<li>
+									<img src="img/IconBASE3.svg" alt="">
+									Total:
+								</li>
+								<li>
+									<img src="img/IconBASE4.svg" alt="">
+									Payment method:
+								</li>
+							</ul>
+							<ul class="step3Information3">
+								<li>
+									UI8_150989
+								</li>
+								<li>
+									January 5, 2023
+								</li>
+								<li>
+									$314.00
+								</li>
+								<li>
+									PayPal
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="popup__contentContent2Right">
+					<img src="img/order.png" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--Shopping Cart Pop-up STEP 3-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+	<script src="script/slick.js"></script>
+    <script src="script/scrolling.js"></script>
+	<script src="script/slickBanner.js"></script>
+	<script src="script/slider.js"></script>
+	<script src="script/tabs.js"></script>
+	<script src="script/productReviewsSlider.js"></script>
+	<script src="script/popup.js"></script>
+	<script src="script/popupStep.js"></script>
+	<script src="script/calculator.js"></script>
+</body>
+</html>
