@@ -1251,6 +1251,7 @@ input::-webkit-inner-spin-button {
   display: flex;
   justify-content: space-between;
   height: 100%;
+  overflow: hidden;
 }
 .popupContentsRight h2 {
   font-size: 44px;
@@ -1390,7 +1391,7 @@ label input {
 }
 .cartInfo {
   width: 640px;
-  height: 100%;
+  height: auto;
 }
 .cartInfoSectionPrice {
   text-align: left;
@@ -1506,7 +1507,7 @@ label input {
 }
 .step2Form input,
 .step2Form select {
-  width: 305px;
+  width: 49%;
   height: 48px;
   background: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.12);
@@ -1619,11 +1620,14 @@ label input {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%;
+  width: 100%;
   margin-right: 24px;
   overflow-y: scroll;
-  height: 100%;
+  height: auto;
   padding-top: 10px;
+}
+a {
+  outline: none !important;
 }
 .popup__contentContent2LeftImg {
   display: flex;
@@ -1711,7 +1715,9 @@ label input {
   margin-bottom: 16px;
   text-align: left;
 }
-
+.popup__contentFlex {
+  width: 50%;
+}
 
 
 
@@ -1775,5 +1781,39 @@ label input {
   }
   .shoppingLeftContentSectionLeft {
     width: 50%;
+  }
+}
+@media (max-width: 1200px) {
+  header {
+    padding: 32px;
+  }
+  .bannerSliderDots {
+    left: 50%;
+    top: 90vh;
+    transform: translatex(-50%);
+    border: none;
+  }
+  .bannerSliderDots .slick-dots {
+    display: flex;
+  }
+  .bannerSliderDots ul li.slick-active:before {
+    content: none;
+  }
+  .sliders .wrapper {
+    max-width: 100%;
+    padding: 0 32px;
+  }
+  .tablecolor li {
+    width: 190px;
+    height: 45px;
+  }
+  .tablecolorWhite li {
+    width: 200px;
+    height: 45px;
+  }
+}
+@media (max-width: 992px) {
+  .logo {
+    margin-left: 0;
   }
 }
