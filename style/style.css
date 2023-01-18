@@ -132,7 +132,7 @@ header .basket:hover {
 }
 .banner,
 .shopping,
-.looks {
+.looks{
   display: block;
   position: relative;
   width: 100%;
@@ -142,7 +142,7 @@ header .basket:hover {
 .shopping {
   background: #fff;
   display: flex;
-  margin-top: -5px;
+
   height: 100vh;
   align-items: flex-start;
 }
@@ -449,8 +449,14 @@ header {
   align-items: center;
   justify-content: center;
   padding: 10px 100px;
-  height: 70%;
+  height: 350px;
   margin-bottom: 16px;
+}
+.shoppingLeftContentSectionRight {
+  height: 93%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .shoppingLeftContentSectiontop360 img {
   max-width: 90%;
@@ -615,23 +621,31 @@ input::-webkit-inner-spin-button {
 .formNumber {
   margin-bottom: 10px;
 }
-#sum {
+#sumText {
   border: none;
   background: transparent;
   font-family: 'Angsana-New';
   font-size: 100px;
   line-height: 100px;
   color: #262626;
-  width: 100%;
-  height: 100%;
+  display: flex;
+  position: relative;
 }
-#sum:before {
+.sum {
+  display: flex;
+  align-items: center;
+}
+#sum {
+  display: none;
+}
+#sumText::after {
   content: "€";
   font-family: 'Angsana-New';
-  font-size: 100px;
-  line-height: 116px;
+  font-size: 50px;
+  line-height: 50зч;
   color: #262626;
   display: flex;
+  margin-top: -20px;
 }
 .shoppingLeftContentSectionRight {
   max-width: 50%;
@@ -642,8 +656,9 @@ input::-webkit-inner-spin-button {
   border-radius: 4px;
   position: relative;
   width: max-content;
+  cursor: pointer;
 }
-.formSubmit input {
+.formSubmit p {
   font-family: 'San Francisco Pro Display Regular';
   font-size: 18px;
   line-height: 130%;
@@ -651,6 +666,7 @@ input::-webkit-inner-spin-button {
   color: #FFFFFF;
   background: transparent;
   border: none;
+  cursor: pointer;
 }
 .formSubmit:before {
   content: "";
@@ -1943,3 +1959,19 @@ a {
     margin-left: 0;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

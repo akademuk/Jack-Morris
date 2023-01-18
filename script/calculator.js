@@ -18,6 +18,9 @@ function plus_modifier_count_product() {
     $("#amounts").val(Number(count_new.toFixed(3)));
     $("#sums").val(Number(sum1) + ".00");
 
+    document.getElementById("sumText").innerHTML = sum1 + ".00";
+
+
     }
 
     function minus_modifier_count_product() {
@@ -49,4 +52,5 @@ function plus_modifier_count_product() {
     $("#amounts").val(Number(count_new.toFixed(3)));
     $("#sums").val(Number(sum1) + ".00");
 
+    document.getElementById("sumText").innerHTML = sum1 + ".00";
 }

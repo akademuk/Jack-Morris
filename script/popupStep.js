@@ -1,5 +1,5 @@
 //* Shopping Cart Pop-up STEP 1
-$(".submitPopup").click(function() {
+$(".formSubmit").click(function() {
     $(".step1").fadeIn(500);
     $("body").addClass("active");
   });

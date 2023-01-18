@@ -32,15 +32,15 @@
 			</p>    
 		</div>
 	</div>
-		
-		<div class="banner" id="firstPage">
+
+	<section class="banner" id="firstPage">
 			<header>
 				<ul class="navigation">
 					<li>
-						<a href="#Products">Products</a>
+						<a href="#secondPage">Products</a>
 					</li>
 					<li>
-						<a href="#Specification">Specification</a>
+						<a href="#thirdPage">Specification</a>
 					</li>
 					<li>
 						<a href="#Reviews">Reviews</a>
@@ -97,10 +97,10 @@
 				</div>
 				<div class="bannerSliderDots"></div>
 			  </div>
-		</div>
-		<!--Banner-->
+	</section>
+	<!--Banner-->
 	
-		<div class="shopping" id="secondPage">
+	<section class="shopping" id="secondPage">
 			<div class="shoppingLeftContent">
 				<h2>Electronic vape "Jack Morris" <br> Blueberry + ice | 3500 puffs</h2>
 				<span>in stock</span>
@@ -167,14 +167,15 @@
 	
 							<div class="sum">
 								<input type="number" id="sum" placeholder="Количество" value="99.00" step="1" readonly>
+								<p id="sumText">99.00</p>
 							</div>
 	
 							<div class="formSubmit">
-								
+								<p class="submitPopup">Buy now</p>
 								<!-- <input type="submit" value="Buy now" class="submitPopup"> -->
 							</div>
 						</form>
-						<button class="submitPopup">Buy now</button>
+						<!-- <button class="submitPopup">Buy now</button> -->
 					</div>
 				</div>
 			</div>
@@ -285,10 +286,10 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<!--Shopping-->
+	</section>
+	<!--Shopping-->
 	
-		<div class="looks" id="thirdPage">
+	<section class="looks" id="thirdPage">
 			<div class="wrapper">
 				<div class="looksTable">
 					<div class="looksTableSection">
@@ -329,9 +330,9 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<!--Looks-->
-	
+	</section>
+	<!--Looks-->
+
 	<div class="sliders">
 		<div class="slidersPrev">
 			<img src="img/arrowSlider.svg" alt="">
@@ -406,7 +407,7 @@
 	</div>
 	<!--Information-->
 
-	<div class="productReviews">
+	<div class="productReviews" id="Reviews">
 		<div class="ReviewsslidersPrev">
 			<img src="img/arrowSlider.svg" alt="">
 		</div>
@@ -917,6 +918,8 @@
 	</section>
 	<!--Shopping Cart Pop-up STEP 3-->
 
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 	<script src="script/slick.js"></script>
