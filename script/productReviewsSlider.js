@@ -6,4 +6,11 @@ $('.productReviewsSlider').slick({
     nextArrow: (".ReviewsslidersNext"),
     dots: true,
     appendDots: $('.productReviewsDots'),
+    draggable: true,
+    dots: true,
+    fade: true,
+    speed: 500,
+    infinite: true,
+    cssEase: 'ease-in-out',
+    touchThreshold: 100,
 })

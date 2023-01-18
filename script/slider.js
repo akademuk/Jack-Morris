@@ -1,7 +1,15 @@
 $('.slidersContent').slick({
     infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
     prevArrow: (".slidersPrev"),
-    nextArrow: (".slidersNext")
+    nextArrow: (".slidersNext"),
+    draggable: true,
+    dots: true,
+    fade: true,
+    speed: 500,
+    infinite: true,
+    cssEase: 'ease-in-out',
+    touchThreshold: 100,
+    customPaging: function (slider,index) { 
+      return '0' + (index + 1); 
+      }
 })
