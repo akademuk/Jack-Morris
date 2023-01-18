@@ -12,5 +12,15 @@ $('.slider').slick({
   appendDots: $('.bannerSliderDots'),
   customPaging: function (slider,index) { 
     return '0' + (index + 1); 
-    }
+    },
+    responsive: [
+      {
+          breakpoint: 1280,
+          settings: {
+            customPaging: function (slider,index) { 
+              return; 
+              },
+          }
+      }
+]
 })
