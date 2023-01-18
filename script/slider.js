@@ -3,7 +3,7 @@ $('.slidersContent').slick({
     prevArrow: (".slidersPrev"),
     nextArrow: (".slidersNext"),
     draggable: true,
-    dots: true,
+    dots: false,
     fade: true,
     speed: 500,
     infinite: true,
