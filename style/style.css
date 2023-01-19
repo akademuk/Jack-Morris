@@ -2372,15 +2372,25 @@ a {
   }
   .step1 .popup__content {
     padding: 20px 16px;
-    width: 100vw;
+    width: 800vw;
     box-sizing: border-box;
     height: 100vh;
+    left: 20vw;
+    top: 0;
+    /* right: 0; */
+    transform: translateY(0);
+    padding-right: 2px;
   }
   .step2 .popup__content {
     padding: 20px 16px;
-    width: 100vw;
+    width: 80vw;
     box-sizing: border-box;
     height: 100vh;
+    left: 20vw;
+    top: 0;
+    /* right: 0; */
+    transform: translateY(0);
+    padding-right: 2px;
   }
   .popupContentsRight {
     padding: 16px;
@@ -2402,6 +2412,9 @@ a {
   }
   .cartInfo {
     width: 100%;
+  }
+  .popup__content {
+    width: 80vw;
   }
 }
 @media (max-width: 992px) {
@@ -2622,15 +2635,25 @@ a {
   }
   .step1 .popup__content {
     padding: 20px 16px;
-    width: 100vw;
+    width: 80vw;
     box-sizing: border-box;
     height: 100vh;
+    left: 20vw;
+    top: 0;
+    /* right: 0; */
+    transform: translateY(0);
+    padding-right: 2px;
   }
   .step2 .popup__content {
     padding: 20px 16px;
-    width: 100vw;
+    width: 80vw;
     box-sizing: border-box;
     height: 100vh;
+    left: 20vw;
+    top: 0;
+    /* right: 0; */
+    transform: translateY(0);
+    padding-right: 2px;
   }
   .greenborder p {
     font-size: 10px;
@@ -2681,9 +2704,14 @@ a {
   }
   .step3 .popup__content {
     padding: 20px 16px;
-    width: 100vw;
+    width: 80vw;
     box-sizing: border-box;
     height: 100vh;
+    left: 20vw;
+    top: 0;
+    /* right: 0; */
+    transform: translateY(0);
+    padding-right: 2px;
   }
   .popupContentsLeft {
     width: 100%;
