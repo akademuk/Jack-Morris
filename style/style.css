@@ -1897,7 +1897,15 @@ a {
   max-width: 85%;
   width: 100%;
 }
-
+.disTablet {
+  display: none;
+}
+.disDes {
+  display: block;
+}
+.popup__contentContent2Left {
+  display: flex;
+}
 
 
 
@@ -1960,6 +1968,55 @@ a {
 @media (max-width: 1200px) {
   header {
     padding: 32px;
+  }
+  .disNons {
+    display: none;
+  }
+  .popup__contentFlex {
+    width: 100%;
+  }
+  .popup__contentContent2LeftImg {
+    display: none;
+  }
+  .popup__contentContent2Right {
+    margin-top: 32px;
+    height: 350px;
+  }
+  .popup__contentContent2Right img{
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    height: 100%;
+  }
+  .popup__contentContent2Left p {
+    margin-bottom: 32px;
+    font-size: 23px;
+    line-height: 27px;
+  }
+  .popup__contentContent2Left h2 span {
+    display: none;
+  }
+  .disDes {
+    display: none;
+  }
+  .disTablet {
+    display: block;
+  }
+  .step2Form {
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+  .popup__contentContent2 {
+    flex-direction: column;
+  }
+  .popupContentsRightStep2 {
+    width: 100%;
+  }
+  .step2Form input {
+    width: 100%;
+  }
+  .step2Form select {
+    width: 100%;
   }
   .formNumber {
     order: 4;
@@ -2304,6 +2361,47 @@ a {
   }
   .slidersNext.slick-arrow {
     display: none !important;
+  }
+  .popupContentsRight {
+    overflow-y: unset;
+    margin-top: 30px;
+    height: 1000px;
+  }
+  .popupContents {
+    flex-direction: column;
+  }
+  .step1 .popup__content {
+    padding: 20px 16px;
+    width: 100vw;
+    box-sizing: border-box;
+    height: 100vh;
+  }
+  .step2 .popup__content {
+    padding: 20px 16px;
+    width: 100vw;
+    box-sizing: border-box;
+    height: 100vh;
+  }
+  .popupContentsRight {
+    padding: 16px;
+  }
+  .popupContentsLeft {
+    width: 100%;
+    margin-right: 0;
+  }
+  .popupContentsRight {
+    width: 100%;
+  }
+  .popupContents {
+    overflow-y: scroll;
+    padding-right: 10px;
+  }
+  .popupContentsLeft {
+    overflow: unset;
+    height: auto;
+  }
+  .cartInfo {
+    width: 100%;
   }
 }
 @media (max-width: 992px) {
@@ -2710,101 +2808,143 @@ a {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-.md-select *, .md-select :after, .md-select :before {
-  box-sizing: border-box;
+.choiceForm {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.md-select {
-  background: #FFFFFF;
-  box-shadow: 0px 0px 2px rgb(0 0 0 / 25%);
-  border-radius: 4px;
-}
-.md-select [type=button] {
-  background: #FFFFFF;
-  border-radius: 4px;
-  box-shadow: 0px 0px 2px rgb(0 0 0 / 25%);
-  cursor: default;
-  display: block;
-  height: 73px;
-  padding: 16px;
+.choiceContainer {
   position: relative;
-  text-align: left;
-  text-shadow: none;
-  width: 100%;
-  z-index: 1;
-  outline: none;
-  overflow: hidden;
+  width: max-content;
+  height: 43px;
+  margin-bottom: 8px;
+  margin-right: 8px;
+  display: flex;
+}
+.choiceContainer :nth-last-of-type(1) {
+  margin-right: 0;
+}
+.choiceContainer label {
+  font-family: 'San Francisco Pro Display Regular';
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 150%;
+  color: #714830;
+  padding: 12px 20px;
+  background: transparent;
+  border: 2px solid transparent;
+  border-radius: 4px;
   box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+.choiceContainer input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.choiceContainer input:checked + label {
+  background: rgba(0, 0, 0, 0.04);
+  border: 2px solid rgba(0, 0, 0, 0.12);
+}
+.contents {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  border: 2px solid #F2F2F2;
+  border-top: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.accordion {
+  max-width: 100%;
+  background: #FFFFFF;
   margin-top: 16px;
+}
+.heading {
   font-family: 'San Francisco Pro Display Regular';
   font-weight: 500;
   font-size: 11px;
   line-height: 150%;
   text-transform: uppercase;
+  padding: 12px 0;
+  border: 2px solid #F2F2F2;
+  border-radius: 4px;
   color: #714830;
-  border: none;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  position: relative;
 }
-.md-select [type=button]:focus, .md-select [type=button]:hover {
-  background: rgba(0, 0, 0, 0.1);
+
+.heading img {
+  position: absolute;
+  left: 20px;
+  top: 12.5px;
 }
-.md-select [type=button]:after {
-  content: "";
+.heading.marN.active {
+  margin-bottom: 0;
+}
+.marN {
+  margin-bottom: 16px;
+}
+.marN + .contents {
+  margin-bottom: 16px;
+}
+
+
+.heading::before {
+  content: '';
   background: url(../img/selectArrows.svg);
   background-repeat: no-repeat;
   background-size: contain;
   width: 12px;
   height: 7px;
-  float: right;
-  padding-right: 16px;
-}
-.md-select ul[role=listbox] {
-  background-color: white;
-  cursor: default;
-  list-style: none;
-  line-height: 26px;
-  overflow: hidden;
-  margin: 0;
-  max-height: 0;
   position: absolute;
-  padding: 0;
-  transform: translateY(-50%);
-  transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1);
-  width: 100%;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
+  right: 20px;
+  top: 15px;
 }
-.md-select ul[role=listbox] li {
-  height: 48px;
-  margin: 0;
-  padding: 10px 16px;
-  outline: none;
-  overflow: hidden;
+.active.heading::before {
+  transform: rotate(-180deg);
 }
-.md-select ul[role=listbox] li:focus, .md-select ul[role=listbox] li:hover, .md-select ul[role=listbox] li.active {
-  background: rgba(0, 0, 0, 0.1);
+.not-active.heading::before {
+  transform: rotate(0deg);
 }
-.md-select.active ul {
-  max-height: 200px;
-  overflow: auto;
-  padding: 0;
-  z-index: 2;
-  transition: all 0.2s ease;
+.contents {
+display: none;
+padding: 16px;
 }
-.md-select ul[role=listbox] li span {
-  font-size: 23px;
-  line-height: 27px;
-  text-transform: uppercase;
-  color: #FFFFFF;
+.heading .contents {
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+.accordion .heading:nth-of-type(1) .contents {
+  padding: 16px !important;
+}
+
+.active.heading {
+  border-bottom: 0;
+  border-radius: 4px 4px 0 0;
 }
