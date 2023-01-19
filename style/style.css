@@ -1889,8 +1889,14 @@ a {
 .simplerTablet {
   display: none;
 }
-
-
+.step3 .popup__content .popupContents {
+  flex-direction: column;
+  overflow-y: scroll;
+}
+.popup__contentContent2Right img {
+  max-width: 85%;
+  width: 100%;
+}
 
 
 
