@@ -12,6 +12,7 @@ $(".formSubmit").click(function() {
 $(".btnStep1").click(function() {
   $(".step2").fadeIn(500);
   $("body").addClass("active");
+  $(".step1").fadeOut(500);
 });
 $(".closer2").click(function() {
   $(".step2").fadeOut(500);
