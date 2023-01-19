@@ -37,8 +37,11 @@ $(".closer3").click(function() {
 
 $(".closerPrev").click(function() {
   $(".step2").fadeOut(500);
+  $(".step1").fadeIn(500);
+  $(".step1 .popup__content .popupContents").scrollTop(0);
 });
 $(".buttonPrev3").click(function() {
   $(".step2").fadeIn(500);
   $(".step3").fadeOut(500);
+  $(".step2 .popup__content .popupContents").scrollTop(0);
 });

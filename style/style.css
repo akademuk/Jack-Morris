@@ -1748,6 +1748,7 @@ label input {
   font-size: 14px;
   line-height: 140%;
   color: #AA826B;
+  width: max-content;
 }
 .buttonPrev3 img {
   margin-right: 12px;
@@ -2360,9 +2361,6 @@ a {
   .cartInfoSection > img {
     display: none;
   }
-  .overflowS {
-    margin-right: 20px;
-  }
   .popupContentsRight {
     overflow-y: unset;
     margin-top: 30px;
@@ -2373,6 +2371,9 @@ a {
   }
   .tablecolor {
     width: 50%;
+  }
+  .btnStep2 {
+    font-size: 16px;
   }
   .informationTop {
     width: 100%;
@@ -2516,12 +2517,19 @@ a {
     flex-direction: column;
   }
   .step1 .popup__content {
-    padding: 64px 16px;
-    width: 98vw;
+    padding: 20px 16px;
+    width: 100vw;
+    box-sizing: border-box;
+    height: 100vh;
   }
   .step2 .popup__content {
-    padding: 64px 16px;
-    width: 98vw;
+    padding: 20px 16px;
+    width: 100vw;
+    box-sizing: border-box;
+    height: 100vh;
+  }
+  .greenborder p {
+    font-size: 10px;
   }
   .popup__contentFlex {
     width: 100%;
@@ -2533,7 +2541,7 @@ a {
     margin-bottom: 32px;
   }
   .popup__contentContent2 {
-    overflow-x: scroll;
+    overflow-x: unset;
     height: 100%;
   }
   .popup__contentContent2 {
@@ -2542,9 +2550,13 @@ a {
   .popupContentsRight {
     padding: 16px;
   }
+  .popup__contentContent2Right img {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 32px;
+  }
   .step2Form {
     flex-direction: column;
-    padding-right: 20px;
     box-sizing: border-box;
   }
   .step2Form input {
@@ -2564,8 +2576,10 @@ a {
     height: 395px;
   }
   .step3 .popup__content {
-    padding: 64px 16px;
-    width: 98vw;
+    padding: 20px 16px;
+    width: 100vw;
+    box-sizing: border-box;
+    height: 100vh;
   }
   .popupContentsLeft {
     width: 100%;
@@ -2579,6 +2593,36 @@ a {
   }
   .popupContents {
     overflow-y: scroll;
+    padding-right: 10px;
+  }
+  .step3Information3 li {
+    font-size: 12px;
+    height: 21px;
+  }
+  .closer3 {
+    position: static;
+    margin-left: auto;
+  }
+  .closer2 {
+    width: 33px;
+    position: static;
+    margin-left: auto;
+  }
+  .closer {
+    width: 33px;
+    position: static;
+    margin-left: auto;
+  }
+  .buttonPrev {
+    width: max-content !important;
+    margin-right: auto;
+    margin-left: 0;
+  }
+  .step3Information1 li {
+    font-size: 12px;
+  }
+  .step3Information {
+    padding: 16px;
   }
   .popupContentsLeft {
     overflow: unset;
@@ -2644,6 +2688,9 @@ a {
   }
   .shoppingFormNicotin {
     padding: 8px;
+  }
+  .btnStep1  {
+    font-size: 16px;
   }
 }
 @media (max-width: 375px) {
