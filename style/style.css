@@ -2560,6 +2560,9 @@ a {
     margin-right: 0;
     margin-bottom: 8px;
   }
+  .slidersItem  {
+    height: 395px;
+  }
   .step3 .popup__content {
     padding: 64px 16px;
     width: 98vw;
