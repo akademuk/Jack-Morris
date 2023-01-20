@@ -261,7 +261,7 @@
 			<div class="shoppingRightContent">
 				<div class="shoppingRightContent_tabs">
 					<div class="tabs">
-						<span class="tab tab1" style="background:#212739;">
+						<span class="tab tab1" style="background: rgba(49, 55, 122, 0.5);">
 							<img src="img/shoppingIcon1.svg" alt="Blueberry + ice">
 							<span>Blueberry + ice</span>
 						</span>
@@ -511,14 +511,13 @@
 					<h4>James Toriff</h4>
 				</div>
 				<div class="productReviewsSliderItem">
-					<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage.</p>
-					<img src="img/avatar.png" alt="James Toriff">
-					<h4>James Toriff</h4>
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi illo nostrum a dignissimos, repudiandae magnam quam temporibus voluptate doloremque eveniet, eum recusandae quod odit mollitia dolorem laborum. Autem, et maxime.</p>
+					<h4>James </h4>
 				</div>
 				<div class="productReviewsSliderItem">
-					<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage.</p>
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi illo nostrum a dignissimos, repudiandae magnam quam temporibus voluptate doloremque eveniet, eum recusandae quod odit mollitia dolorem laborum. Autem, et maxime.</p>
 					<img src="img/avatar.png" alt="James Toriff">
-					<h4>James Toriff</h4>
+					<h4>James </h4>
 				</div>
 				<div class="productReviewsSliderItem">
 					<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage.</p>
@@ -750,8 +749,18 @@
 						<p>$297.00</p>
 					</div>
 					<div class="popupContentsDelivery">
-						<p>Delivery service</p>
-						<img src="img/add.svg" alt="add">
+						<div class="select-wrap">
+							<select class="custom-select" id="select" name="select" placeholder="Delivery service">
+							  <option value="option1" class="tabsOption">Service name1</option>
+							  <option value="option2" class="tabsOption">Service name2</option>
+							  <option value="option3" class="tabsOption">Service name3</option>
+							  <option value="option3" class="tabsOption">Service name4</option>
+							</select>
+						  </div>
+						<!-- <select>
+							<option value="1"><p>Delivery service</p>
+								<img src="img/add.svg" alt="add"></option>
+						</select> -->
 					</div>
 					<div class="popupContentsDetailed">
 						<p>Detailed terms of delivery</p>
@@ -1027,5 +1036,35 @@
 	<script src="script/popupStep.js"></script>
 	<script src="script/calculator.js"></script>
 	<script src="script/select.js"></script>
+	<script>
+		document.querySelectorAll(".select-wrap").forEach(function(wrap) {
+  let select = wrap.querySelector(".custom-select");
+  let classes = select.getAttribute("class"),
+      id      = select.getAttribute("id"),
+      name    = select.getAttribute("name");
+  let template =  '<div class="' + classes + '">';
+      template += '<span class="custom-select-trigger">' + select.getAttribute("placeholder") + '</span>';
+      template += '<div class="custom-options">';
+      select.querySelectorAll("option").forEach(function(option) {
+        template += '<span class="custom-option' + '"data-value="' + option.getAttribute("value") + '">' + option.innerText + '</span>';
+      });
+  template += '</div></div>';
+  let select_wrapper = document.createElement('div'); 
+  select.style.display = 'none';
+  select_wrapper.innerHTML = `<div class="custom-select-wrapper">${template}</div>`;
+  wrap.appendChild(select_wrapper);
+});
+
+document.querySelector(".custom-select-trigger").addEventListener("click", function() {
+  document.querySelector(".custom-select-trigger").closest(".custom-select").classList.toggle("opened");
+});
+document.querySelectorAll(".custom-option").forEach((option)=>{
+  option.addEventListener("click", function() {
+    option.closest(".select-wrap").querySelector("select").value = option.getAttribute("data-value");
+    option.closest(".custom-select").classList.remove("opened");
+    option.closest(".custom-select").querySelector(".custom-select-trigger").innerText = option.innerText;
+  });
+});
+	</script>
 </body>
 </html>

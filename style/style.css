@@ -49,6 +49,40 @@ body {
   background: #391C0C;
   transition: all 0.3s;
 }
+.navigation li a {
+  transition: all 0.3s;
+}
+.navigation li a:hover {
+  color: #AA826B;
+  transition: all 0.3s;
+}
+.navigation li a:active {
+  color: #714830;
+  transition: all 0.3s;
+}
+.navigationFooter li a {
+  transition: all 0.3s;
+}
+.navigationFooter li a:hover {
+  color: #AA826B;
+  transition: all 0.3s;
+}
+.navigationFooter li a:active {
+  color: #714830;
+  transition: all 0.3s;
+}
+.basketFooter {
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.basketFooter:hover {
+  background: #714830;
+  transition: all 0.3s;
+}
+.basketFooter:active {
+  background: #391C0C;
+  transition: all 0.3s;
+}
 .btnStep2 {
   transition: all 0.3s;
 }
@@ -930,6 +964,8 @@ input::-webkit-inner-spin-button {
   margin-bottom: 128px;
 }
 .informationTop p{
+  font-family: 'Angsana-New';
+  font-weight: 400;
   margin-top: 32px;
   font-size: 35px;
   line-height: 41px;
@@ -938,8 +974,8 @@ input::-webkit-inner-spin-button {
 }
 .information {
   background: url(../img/Background1.png);
-  background-size: contain;
-  background-repeat: repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
   margin-top: -2px;
   padding-bottom: 96px;
@@ -1487,11 +1523,15 @@ input::-webkit-inner-spin-button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 8px 8px 8px 16px;
+  padding: 8px 0 8px 0;
   background: #FFFFFF;
   border: 1px solid #F1F1F1;
   border-radius: 4px;
   margin-bottom: 16px;
+  background: #FFFFFF;
+  border: 1px solid #F1F1F1;
+  border-radius: 4px;
+  height: 43px;
 }
 .popupContentsDelivery p {
   font-family: 'San Francisco Pro Display Regular';
@@ -1969,6 +2009,79 @@ a {
 .popup__contentContent2Left {
   display: flex;
 }
+.tab.tab1.active {
+  background: #212739 !important;
+}
+.tab.tab2.active {
+  background: #C0343D !important;
+}
+.tab.tab3.active {
+  background: #AA826B !important;
+}
+.tab.tab4.active {
+  background: #31377A !important;
+}
+.tab.tab5.active {
+  background: #90B666 !important;
+}
+.tab.tab6.active {
+  background: #B74F65 !important;
+}
+.tab.tab7.active {
+  background: #48312C !important;
+}
+.tab.tab8.active {
+  background: #494D87 !important;
+}
+.tab.tab9.active {
+  background: #DA677B !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2565,6 +2678,12 @@ a {
   .numbersPrice {
     width: 80px;
   }
+  .stepsContainerSection {
+    margin-right: 15px;
+  }
+  .cartInfoSectionPriceFlex p:nth-of-type(1) {
+    margin-right: 10px;
+  }
   .cartInfoSection {
     position: relative;
     padding-top: 25px;
@@ -2951,6 +3070,11 @@ a {
     font-size: 16px;
   }
 }
+@media (max-width: 576px)  {
+  .looks {
+    height: 1100px;
+  }
+}
 @media (max-width: 375px) {
   .looks  {
     height: 1000px;
@@ -3007,7 +3131,6 @@ a {
 .contents {
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
   background: transparent;
   border: 2px solid #F2F2F2;
   border-top: none;
@@ -3101,4 +3224,121 @@ padding: 16px;
 .active.heading {
   border-bottom: 0;
   border-radius: 4px 4px 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+select.select-wrap {
+  display: none;
+  height: 48px;
+}
+.select-wrap{
+  width: 100%;
+  background: transparent;
+}
+.custom-select-wrapper {
+  position: relative;
+  display: inline-block;
+  user-select: none;
+  width: 100%;
+  text-align: left;
+}
+.custom-select-wrapper select {
+  display: none;
+}
+.custom-select {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+.custom-select-trigger {
+  position: relative;
+  width: 100%;
+  display: block;
+  padding-left: 20px;
+  font-family: 'San Francisco Pro Display Regular';
+  font-size: 14px;
+  line-height: 140%;
+  color: #262626;
+}
+.custom-select-trigger:after {
+  position: absolute;
+  display: block;
+  content: '';
+  background: url(../img/add.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  right: 30px;
+}
+#select::placeholder {
+  font-family: 'San Francisco Pro Display Regular';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  color: #262626;
+}
+
+.custom-select.opened .custom-options {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+  transform: translateY(0);
+}
+.custom-option {
+  position: relative;
+  display: block;
+  padding: 0 22px;
+  font-size: 18px;
+  line-height: 47px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+.custom-option:hover {
+  background: #efefef;
+}
+.custom-options {
+  position: absolute;
+  display: block;
+  top: 340%;
+  left: 0;
+  right: 0;
+  min-width: 100%;
+  box-shadow: 0 2px 1px rgba(0,0,0,0.2);
+  background: #fff;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(-15px);
+}
+.custom-options span {
+  padding: 8px;
+  height: 36px;
+  box-sizing: border-box;
+  font-family: 'San Francisco Pro Display Regular';
+  font-size: 14px;
+  line-height: 140%;
+  color: #262626;
+  margin: 8px 0;
 }

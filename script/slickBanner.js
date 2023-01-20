@@ -15,7 +15,7 @@ $('.slider').slick({
     },
     responsive: [
       {
-          breakpoint: 1280,
+          breakpoint: 1200,
           settings: {
             customPaging: function (slider,index) { 
               return; 
