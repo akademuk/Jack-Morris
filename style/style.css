@@ -1219,7 +1219,6 @@ input::-webkit-inner-spin-button {
   display: none;
   position: fixed;
   top: 0;
-  left: 0;
   right: 0;
   bottom: 0;
   z-index: 9;
@@ -1906,10 +1905,10 @@ a {
 .popup__contentContent2Left {
   display: flex;
 }
-.popup__content {
-  left: auto;
-  right: -100vw;
-}
+
+
+
+
 
 
 
@@ -2379,11 +2378,13 @@ a {
     width: 80vw;
     box-sizing: border-box;
     height: 100vh;
-    left: 20vw;
+    right: 0;
+    left: 20%;
     top: 0;
     /* right: 0; */
     transform: translateY(0);
     padding-right: 2px;
+    transition: all 1s;
   }
   .step3 .popup__content {
     padding: 20px 16px;
@@ -2407,6 +2408,48 @@ a {
     transform: translateY(0);
     padding-right: 2px;
   }
+
+  @keyframes marquee {
+    0% {
+      left: 100%;
+      animation-delay: 1s;
+    }
+    50% {
+      left: 70%;
+    }
+    75% {
+      left: 50%;
+    }
+    100% {
+      left: 20%;  
+    }
+}
+
+@keyframes marquee1 {
+  0% {
+    left: 20%;  
+  }
+  50% {
+    left: 50%;
+  }
+  75% {
+    left: 70%;
+  }
+  100% {
+    left: 100%;  
+  }
+}
+.animationRight {
+  left: 100%;
+  animation: marquee1 1s linear;
+}
+.animation {
+  left: 20%;
+  animation: marquee 1s linear;
+}
+.popup__content.animation {
+  left: 20%;
+}
   .popupContentsRight {
     padding: 16px;
   }
@@ -2430,6 +2473,7 @@ a {
   }
   .popup__content {
     width: 80vw;
+    transition: all 1s;
   }
 }
 @media (max-width: 992px) {
