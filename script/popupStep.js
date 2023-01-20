@@ -2,6 +2,7 @@
 $(".formSubmit").click(function() {
     $(".step1").fadeIn(500);
     $("body").addClass("active");
+    $("popup__content").addClass("animation");
   });
   $(".closer").click(function() {
     $(".step1").fadeOut(500);

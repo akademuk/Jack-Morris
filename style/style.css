@@ -1906,6 +1906,10 @@ a {
 .popup__contentContent2Left {
   display: flex;
 }
+.popup__content {
+  left: auto;
+  right: -100vw;
+}
 
 
 
@@ -2372,7 +2376,18 @@ a {
   }
   .step1 .popup__content {
     padding: 20px 16px;
-    width: 800vw;
+    width: 80vw;
+    box-sizing: border-box;
+    height: 100vh;
+    left: 20vw;
+    top: 0;
+    /* right: 0; */
+    transform: translateY(0);
+    padding-right: 2px;
+  }
+  .step3 .popup__content {
+    padding: 20px 16px;
+    width: 80vw;
     box-sizing: border-box;
     height: 100vh;
     left: 20vw;
