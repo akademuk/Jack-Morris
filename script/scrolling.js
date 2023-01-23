@@ -24,7 +24,7 @@ $(document).ready( function() {
             let scrolled = $(window).scrollTop();
             // Если user поскроллил
             if (!autoScrolling) {
-                if (scrolled > 1 && currentLocation == 'firstPage') {
+                if (scrolled > 1 && currentLocation === 'firstPage') {
                     scrollPage(secondHeight, 'secondPage');
                 } else if (scrolled > secondHeight + 1 && currentLocation == 'secondPage') {
                     scrollPage(thirdHeight, 'thirdPage');

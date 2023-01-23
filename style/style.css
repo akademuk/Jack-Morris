@@ -23,6 +23,7 @@ body {
     font-family: 'Angsana-New';
     color: #262626;
     outline: none;
+    scroll-behavior: smooth;
 }
 .tab {
   transition: all 0.3s;
