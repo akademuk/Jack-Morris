@@ -47,7 +47,7 @@ $(".closerPrev").click(function() {
 });
 $(".buttonPrev3").click(function() {
   $(".step3 .popup__content").addClass("animationRight");
-  $(".step2").fadeIn(500);
+  $(".step2").fadeOut(500);
   $(".step3").fadeOut(500);
   $(".step2 .popup__content .popupContents").scrollTop(0);
 });

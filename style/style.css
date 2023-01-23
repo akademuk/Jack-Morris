@@ -65,11 +65,11 @@ body {
   transition: all 0.3s;
 }
 .navigationFooter li a:hover {
-  color: #AA826B;
+  color: #AA826B !important;
   transition: all 0.3s;
 }
 .navigationFooter li a:active {
-  color: #714830;
+  color: #714830 !important;
   transition: all 0.3s;
 }
 .basketFooter {
@@ -260,6 +260,7 @@ header .basket:hover {
 }
 .slideshow .slider {
   box-shadow: 0 20px 50px -25px black;
+  height: 100%;
 }
 .slideshow .slider-track {
   -webkit-transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
@@ -296,6 +297,7 @@ header .basket:hover {
   margin-bottom: 32px;
 }
 .sliderContent a {
+  font-family: 'San Francisco Pro Display Regular';
   display: flex;
   align-items: center;
   padding: 24px 32px;
@@ -433,7 +435,7 @@ header {
   justify-content: flex-end;
 }
 .shoppingRightContent_content {
-  max-width: 62%;
+  max-width: 80%;
 }
 .shoppingRightContent_tabs {
   width: 17%;
@@ -458,7 +460,7 @@ header {
   flex-direction: column;
   align-items: center;
   padding: 16px 16px 32px 16px;
-  width: 50%;
+  width: 211px;
   background: #FFFFFF;
   border-radius: 4px;
   box-sizing: border-box;
@@ -489,6 +491,7 @@ header {
   transition: all 0.3s;
   cursor: pointer;
   padding-left: 24px;
+  box-sizing: border-box;
 }
 .tab > span {
   font-size: 0;
@@ -558,7 +561,10 @@ header {
   justify-content: space-between;
 }
 .shoppingLeftContentSectiontop360 img {
-  max-width: 90%;
+  max-width: 100%;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
 }
 .shoppingLeftContentSectionBottom {
   background:url(../img/Background.png), linear-gradient(0deg, #A4775B, #A4775B);
@@ -871,7 +877,7 @@ input::-webkit-inner-spin-button {
 }
 .slidersItem img {
   max-width: 100%;
-  height: 100%;
+  height: 103%;
   object-fit: cover;
   width: 100%;
 }
@@ -879,7 +885,7 @@ input::-webkit-inner-spin-button {
   height: 100%;
 }
 .slidersItem {
-  height: 725px;
+  height: 725px !important;
   position: relative;
 }
 .sliderText {
@@ -901,7 +907,11 @@ input::-webkit-inner-spin-button {
   color: #391C0C;
   margin-bottom: 32px;
 }
+.modifier_count:hover svg path {
+  fill: #79533D;
+}
 .sliderText a {
+  font-family: 'San Francisco Pro Display Regular';
   display: flex;
   align-items: center;
   padding: 24px 32px;
@@ -1025,6 +1035,7 @@ input::-webkit-inner-spin-button {
 .productReviews {
   padding: 64px 0;
   position: relative;
+  background: #FAFAFA;
 }
 .productReviews .wrapper{
   display: flex;
@@ -1705,8 +1716,7 @@ label input {
   align-items: center;
 }
 .numberCounter2 .modifier_count{
-  width: 16px;
-  height: 16px;
+  transition: all 0.3s;
   border: none;
 }
 .numberCounterS {
@@ -1874,8 +1884,6 @@ label input {
   align-items: center;
   margin-top: 33px;
   height: 100%;
-  overflow-y: scroll;
-  overflow-x: hidden;
 }
 .popup__contentContent2Right {
   width: 48%;
@@ -2013,7 +2021,6 @@ a {
 }
 .step3 .popup__content .popupContents {
   flex-direction: column;
-  overflow-y: scroll;
 }
 .popup__contentContent2Right img {
   max-width:100%;
@@ -2033,30 +2040,39 @@ a {
 }
 .tab.tab1.active {
   background: #212739 !important;
+  z-index: 8;
 }
 .tab.tab2.active {
   background: #C0343D !important;
+  z-index: 8;
 }
 .tab.tab3.active {
   background: #AA826B !important;
+  z-index: 8;
 }
 .tab.tab4.active {
   background: #31377A !important;
+  z-index: 8;
 }
 .tab.tab5.active {
   background: #90B666 !important;
+  z-index: 8;
 }
 .tab.tab6.active {
   background: #B74F65 !important;
+  z-index: 8;
 }
 .tab.tab7.active {
   background: #48312C !important;
+  z-index: 8;
 }
 .tab.tab8.active {
   background: #494D87 !important;
+  z-index: 8;
 }
 .tab.tab9.active {
   background: #DA677B !important;
+  z-index: 8;
 }
 .bannerImgs {
   max-width: 100%;
@@ -2083,6 +2099,9 @@ a {
   flex-direction: column;
   margin-top: 0;
 }
+.step3 .popup__content .popupContents .flexContainer {
+  overflow-y: scroll;
+}
 .heading1 {
   position: relative;
 }
@@ -2090,9 +2109,6 @@ a {
   position: absolute;
   right: 11px;
   top: -1px;
-}
-.banner2Img {
-  object-position: left -150px;
 }
 
 
@@ -2116,10 +2132,10 @@ a {
 .choiceContainer label {
   font-family: 'San Francisco Pro Display Regular';
   font-weight: 500;
-  font-size: 11px;
-  line-height: 150%;
+  font-size: 9px;
+  line-height: 100%;
   color: #714830;
-  padding: 12px 20px;
+  padding: 12px 12px;
   background: transparent;
   border: 2px solid transparent;
   border-radius: 4px;
@@ -2166,11 +2182,13 @@ a {
   align-items: center;
   justify-content: center;
   position: relative;
+  height: 73px;
+  box-sizing: border-box;
 }
 .heading img {
   position: absolute;
   left: 20px;
-  top: 12.5px;
+  top: 24.5px;
 }
 .heading.marN.active {
   margin-bottom: 0;
@@ -2190,7 +2208,7 @@ a {
   height: 7px;
   position: absolute;
   right: 20px;
-  top: 15px;
+  top: 30px;
 }
 .active.heading::before {
   transform: rotate(-180deg);
@@ -2330,9 +2348,34 @@ padding: 16px;
 .boxClose {
   display: none;
 }
+.basket {
+  position: relative;
+}
+.basketSum {
+  position: absolute;
+  top: -17px;
+  right: -17px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  color: #FFFFFF;
+  width: 32px;
+  height: 32px;
+  background: #AA826B;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-
-
+.originSectionTablet {
+  display: none;
+}
+.originSectionDes {
+  display: flex;
+}
 
 
 
@@ -2458,6 +2501,11 @@ padding: 16px;
   }
   .greenborder {
     width: 33%;
+  }
+  .PhotoDotted {
+    transform: scale(1.5);
+    object-position: center -100px;
+    object-fit: contain !important;
   }
   .popup__contentContent2Right img {
     margin-left: 0;
@@ -2606,6 +2654,7 @@ padding: 16px;
     bottom: -470px;
   }
   .sliderContent a {
+    font-family: 'San Francisco Pro Display Regular';
     padding: 24px 32px;
     width: 161px;
     height: 71px;
@@ -2972,6 +3021,11 @@ padding: 16px;
     width: 80vw;
     transition: all 1s;
   }
+  .marN svg {
+    position: absolute;
+    left: 22px;
+    top: 25px;
+  }
 }
 @media (max-width: 992px) {
   .logo {
@@ -2983,6 +3037,9 @@ padding: 16px;
   #popup p {
     margin-bottom: 32px;
   }
+  .sliders .wrapper {
+    padding: 0;
+  }
 }
 @media (max-width: 767px) {
   .looks .wrapper {
@@ -2992,8 +3049,17 @@ padding: 16px;
   .looksTableSection {
     width: 100%;
   }
+  .productReviews {
+    background: #FAFAFA;
+  }
   .stepsContainerSection {
     width: 33%;
+  }
+  .PhotoDotted {
+    object-position: center -67px;
+  }
+  .informationBottom p {
+    width: 80%;
   }
   .greenborder {
     width: 33%;
@@ -3264,7 +3330,7 @@ padding: 16px;
     margin-bottom: 8px;
   }
   .slidersItem  {
-    height: 395px;
+    height: 395px !important;
   }
   .popupContentSectionStep2 {
     width: 100%;
@@ -3335,7 +3401,7 @@ padding: 16px;
     display: none !important;
   }
   .slidersItem img {
-    height: 400px;
+    height: 400px !important;
   }
   .sliders .wrapper {
     padding: 0;
@@ -3389,10 +3455,16 @@ padding: 16px;
     margin-bottom: 16px;
   }
   .shoppingLeftContentSectiontop360 {
-    padding: 10px 50px;
+    padding: 25px 50px;
   }
   .shoppingLeftContentSectionBottom {
     padding: 8px;
+  }
+  .shoppingLeftContentSectionBottom img {
+    max-width: 100%;
+  }
+  .shoppingLeftContentSectionBottom {
+    padding: 8px 35px;
   }
   .originSection {
     padding: 8px;
@@ -3402,6 +3474,15 @@ padding: 16px;
   }
   .btnStep1  {
     font-size: 16px;
+  }
+  .shoppingLeftContentSection {
+    position: relative;
+  }
+  .originSectionTablet {
+    display: flex;
+  }
+  .originSectionDes {
+    display: none;
   }
 }
 @media (max-width: 576px)  {
