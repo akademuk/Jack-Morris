@@ -3,7 +3,7 @@ $(document).ready(function(){
 
     $(this).toggleClass("active").next().slideToggle();
 
-    $(".contents").not($(this).next()).css("display:flex").slideUp(300);
+    $(".contents").not($(this).next().css('display', 'flex')).slideUp(300);
                  
     $(this).siblings().removeClass("active");
     });
