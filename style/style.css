@@ -1901,7 +1901,6 @@ label input {
   align-items: center;
   width: 100%;
   margin-right: 24px;
-  overflow-y: scroll;
   height: auto;
   padding-top: 10px;
 }
