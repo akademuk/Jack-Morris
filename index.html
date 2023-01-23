@@ -73,8 +73,8 @@
 					</div>
 				  </div>
 				  <div class="item">
-					<img src="img/banner2.png" alt="Jack Morris" class="bannerImg"/>
-					<img src="img/banner2.png" alt="Jack Morris" class="bannerTablet"/>
+					<img src="img/banner2.png" alt="Jack Morris" class="bannerImgs"/>
+					<img src="img/mobileSlider.png" alt="Jack Morris" class="bannerTablets"/>
 					<div class="sliderContent sliderContentRight">
 						<p>a better<br>
 							life<br>
@@ -598,6 +598,7 @@
 			<div class="closer">
 				<img src="img/close.svg" alt="close">
 			  </div>
+			<div class="flexContainer">
 			<div class="popupContentsLeft">
 				<button class="closer buttonPrev">
 					<img src="img/arrowSlider.svg" alt="Jack Morris">
@@ -748,23 +749,67 @@
 						<p>Subtotal</p>
 						<p>$297.00</p>
 					</div>
-					<div class="popupContentsDelivery">
-						<div class="select-wrap">
-							<select class="custom-select" id="select" name="select" placeholder="Delivery service">
-							  <option value="option1" class="tabsOption">Service name1</option>
-							  <option value="option2" class="tabsOption">Service name2</option>
-							  <option value="option3" class="tabsOption">Service name3</option>
-							  <option value="option3" class="tabsOption">Service name4</option>
-							</select>
-						  </div>
-						<!-- <select>
-							<option value="1"><p>Delivery service</p>
-								<img src="img/add.svg" alt="add"></option>
-						</select> -->
+					<div class="popupContentsDelivery select-wrap">
+						<div class="select">
+							<div class="selectBtn" data-type="firstOption">Delivery service</div>
+							<div class="selectDropdown">
+								<div class="option" data-type="firstOption">Service name1</div>
+								<div class="option" data-type="secondOption">Service name2</div>
+								<div class="option" data-type="thirdOption">Service name3</div>
+								<div class="option" data-type="firrOption">Service name4</div>
+							</div>
+						</div>
 					</div>
 					<div class="popupContentsDetailed">
-						<p>Detailed terms of delivery</p>
-						<img src="img/arrowPop.svg" alt="arrow">
+						<div class="popupContentsDetailedText">Detailed4 terms of delivery
+							<img src="img/arrowPop.svg" alt="arrow">
+						</div>
+						<div class="accordion1">
+							<div class="heading1">Detailed1 terms of delivery
+								<img src="img/arrowPop.svg" alt="arrow">
+							</div>
+							<div class="contents1">
+								<ul>
+									<li>* Orders received after 18:00 will be packed on the next business day.</li>
+									<li>* We will supply tracking information for every order we send.</li>
+									<li>* The shipments can be tracked through Israelpost website.</li>
+									<li>* There is no shipments on friday and saturday, all orders received on weekends will be packed on the next business day.</li>
+								</ul>
+							</div>
+							<div class="heading1">Detailed2 terms of delivery
+								<img src="img/arrowPop.svg" alt="arrow">
+							</div>
+							<div class="contents1">
+								<ul>
+									<li>* Orders received after 18:00 will be packed on the next business day.</li>
+									<li>* We will supply tracking information for every order we send.</li>
+									<li>* The shipments can be tracked through Israelpost website.</li>
+									<li>* There is no shipments on friday and saturday, all orders received on weekends will be packed on the next business day.</li>
+								</ul>
+							</div>
+							<div class="heading1">Detailed3 terms of delivery
+								<img src="img/arrowPop.svg" alt="arrow">
+							</div>
+							<div class="contents1">
+								<ul>
+									<li>* Orders received after 18:00 will be packed on the next business day.</li>
+									<li>* We will supply tracking information for every order we send.</li>
+									<li>* The shipments can be tracked through Israelpost website.</li>
+									<li>* There is no shipments on friday and saturday, all orders received on weekends will be packed on the next business day.</li>
+								</ul>
+							</div>
+							<div class="heading1">Detailed4 terms of delivery
+								<img src="img/arrowPop.svg" alt="arrow">
+							</div>
+							<div class="contents1">
+								<ul>
+									<li>* Orders received after 18:00 will be packed on the next business day.</li>
+									<li>* We will supply tracking information for every order we send.</li>
+									<li>* The shipments can be tracked through Israelpost website.</li>
+									<li>* There is no shipments on friday and saturday, all orders received on weekends will be packed on the next business day.</li>
+								</ul>
+							</div>
+						</div>
 					</div>
 					<form action="">
 						<div class="PaymentMethod">
@@ -790,6 +835,7 @@
 					</button>
 				</div>
 			</div>
+			</div>
 		  </div>
 	  		
 		</div>
@@ -802,6 +848,7 @@
 				<div class="closer2">
 					<img src="img/close.svg" alt="close">
 				</div>
+				<div class="flexContainer">
 				<div class="popupContentsLeft">
 					<button class="closerPrev buttonPrev">
 						<img src="img/arrowSlider.svg" alt="Jack Morris">
@@ -916,6 +963,7 @@
 						</button>
 					</div>
 				</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -927,26 +975,29 @@
 			<div class="closer3">
 				<img src="img/close.svg" alt="close">
 			</div>
-			<button class="buttonPrev3">
-				<img src="img/arrowSlider.svg" alt="Jack Morris">
-				Get home
-			</button>
+			<div class="flexContainer">
 			<div class="stepsContainer">
-				<div class="stepsContainerSection greenborder">
-					<img src="img/extension.svg" alt="Jack Morris">
-					<p>Shopping cart</p>
-				</div>
-
-				<div class="stepsContainerSection greenborder">
-					<img src="img/extension.svg" alt="Jack Morris">
-					<p class="textStep">Checkout details</p>
-				</div>
-
-				<div class="stepsContainerSection">
-					<p class="nuberStep">
-						<img src="img/like.svg" alt="Jack Morris">
-					</p>
-					<p class="textStep">Order complete</p>
+				<button class="buttonPrev3">
+					<img src="img/arrowSlider.svg" alt="Jack Morris">
+					Get home
+				</button>
+				<div class="classSteps">
+					<div class="stepsContainerSection greenborder">
+						<img src="img/extension.svg" alt="Jack Morris">
+						<p>Shopping cart</p>
+					</div>
+	
+					<div class="stepsContainerSection greenborder">
+						<img src="img/extension.svg" alt="Jack Morris">
+						<p class="textStep">Checkout details</p>
+					</div>
+	
+					<div class="stepsContainerSection">
+						<p class="nuberStep">
+							<img src="img/like.svg" alt="Jack Morris">
+						</p>
+						<p class="textStep">Order complete</p>
+					</div>
 				</div>
 			</div>
 			<div class="popup__contentContent2">
@@ -1018,6 +1069,7 @@
 				</div>
 			</div>
 			</div>
+			</div>
 		</div>
 	</section>
 	<!--Shopping Cart Pop-up STEP 3-->
@@ -1036,35 +1088,5 @@
 	<script src="script/popupStep.js"></script>
 	<script src="script/calculator.js"></script>
 	<script src="script/select.js"></script>
-	<script>
-		document.querySelectorAll(".select-wrap").forEach(function(wrap) {
-  let select = wrap.querySelector(".custom-select");
-  let classes = select.getAttribute("class"),
-      id      = select.getAttribute("id"),
-      name    = select.getAttribute("name");
-  let template =  '<div class="' + classes + '">';
-      template += '<span class="custom-select-trigger">' + select.getAttribute("placeholder") + '</span>';
-      template += '<div class="custom-options">';
-      select.querySelectorAll("option").forEach(function(option) {
-        template += '<span class="custom-option' + '"data-value="' + option.getAttribute("value") + '">' + option.innerText + '</span>';
-      });
-  template += '</div></div>';
-  let select_wrapper = document.createElement('div'); 
-  select.style.display = 'none';
-  select_wrapper.innerHTML = `<div class="custom-select-wrapper">${template}</div>`;
-  wrap.appendChild(select_wrapper);
-});
-
-document.querySelector(".custom-select-trigger").addEventListener("click", function() {
-  document.querySelector(".custom-select-trigger").closest(".custom-select").classList.toggle("opened");
-});
-document.querySelectorAll(".custom-option").forEach((option)=>{
-  option.addEventListener("click", function() {
-    option.closest(".select-wrap").querySelector("select").value = option.getAttribute("data-value");
-    option.closest(".custom-select").classList.remove("opened");
-    option.closest(".custom-select").querySelector(".custom-select-trigger").innerText = option.innerText;
-  });
-});
-	</script>
 </body>
 </html>
