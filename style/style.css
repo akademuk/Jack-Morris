@@ -2654,7 +2654,7 @@ a {
   @keyframes marquee {
     0% {
       left: 100%;
-      animation-delay: 1s;
+      animation-delay: 0.3s;
     }
     50% {
       left: 70%;
@@ -2683,11 +2683,11 @@ a {
 }
 .animationRight {
   left: 100%;
-  animation: marquee1 1s linear;
+  animation: marquee1 0.3s linear;
 }
 .animation {
   left: 20%;
-  animation: marquee 1s linear;
+  animation: marquee 0.3s linear;
 }
 .popup__content.animation {
   left: 20%;
@@ -2993,7 +2993,6 @@ a {
   .popup__contentContent2Right img {
     max-width: 100%;
     width: 100%;
-    margin-top: 32px;
   }
   .step2Form {
     flex-direction: column;
@@ -3088,7 +3087,7 @@ a {
   }
   .looks {
     background: url(../img/Frame.png), url(../img/Promocontainer.png);
-    background-size:contain, cover;
+    background-size: cover, cover;
     background-repeat: no-repeat;
   }
   #popup > img {
@@ -3153,6 +3152,11 @@ a {
 @media (max-width: 576px)  {
   .looks {
     height: 1100px;
+  }
+  .looks {
+    background: url(../img/Frame.png), url(../img/Promocontainer.png);
+    background-size: contain, cover;
+    background-repeat: no-repeat;
   }
 }
 @media (max-width: 375px) {
@@ -3424,4 +3428,7 @@ padding: 16px;
   min-width: 100%;
   padding-right: 11px;
   box-sizing: border-box;
+}
+.boxClose {
+  display: none;
 }

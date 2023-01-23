@@ -27,6 +27,3 @@ on('click', '.option', item => {
 	parent.innerText = item.target.innerText;
 })
 
-// $(".option").click(function() {
-// 	$(".popupContentsDetailed").addClass("box");
-// }).eq(0).addClass("active");

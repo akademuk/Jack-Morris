@@ -8,5 +8,6 @@ $(document).ready(function(){
   $(".option").click(function() {
     $(".option").removeClass("active").eq($(this).index()).addClass("active");
     $(".heading1").hide().eq($(this).index()).fadeIn()
+    $(".popupContentsDetailedText").addClass("boxClose");
   }).eq(0).addClass("active");
 });
