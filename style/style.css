@@ -2097,6 +2097,241 @@ a {
 
 
 
+.choiceForm {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.choiceContainer {
+  position: relative;
+  width: max-content;
+  height: 43px;
+  margin-bottom: 8px;
+  margin-right: 8px;
+  display: flex;
+}
+.choiceContainer :nth-last-of-type(1) {
+  margin-right: 0;
+}
+.choiceContainer label {
+  font-family: 'San Francisco Pro Display Regular';
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 150%;
+  color: #714830;
+  padding: 12px 20px;
+  background: transparent;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+.choiceContainer input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.choiceContainer input:checked + label {
+  background: rgba(0, 0, 0, 0.04);
+  border: 2px solid rgba(0, 0, 0, 0.12);
+}
+.contents {
+  flex-wrap: wrap;
+  align-items: center;
+  background: transparent;
+  border: 2px solid #F2F2F2;
+  border-top: none;
+
+}
+.accordion {
+  max-width: 100%;
+  background: #FFFFFF;
+  margin-top: 16px;
+}
+.heading {
+  font-family: 'San Francisco Pro Display Regular';
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 150%;
+  text-transform: uppercase;
+  padding: 12px 0;
+  border: 2px solid #F2F2F2;
+  border-radius: 4px;
+  color: #714830;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.heading img {
+  position: absolute;
+  left: 20px;
+  top: 12.5px;
+}
+.heading.marN.active {
+  margin-bottom: 0;
+}
+.marN {
+  margin-bottom: 16px;
+}
+.marN + .contents {
+  margin-bottom: 16px;
+}
+.heading::before {
+  content: '';
+  background: url(../img/selectArrows.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 12px;
+  height: 7px;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+.active.heading::before {
+  transform: rotate(-180deg);
+}
+.not-active.heading::before {
+  transform: rotate(0deg);
+}
+.contents {
+display: none;
+padding: 16px;
+}
+.heading .contents {
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+.accordion .heading:nth-of-type(1) .contents {
+  padding: 16px !important;
+}
+
+.active.heading {
+  border-bottom: 0;
+  border-radius: 4px 4px 0 0;
+}
+
+.accordion1 {
+  width: 100%;
+}
+.select {
+  position: relative;
+  width: 100%;
+}
+.select .selectBtn {
+  box-sizing: border-box;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+  user-select: none;
+  font-family: 'San Francisco Pro Display Regular';
+  font-size: 14px;
+  line-height: 140%;
+  color: #262626;
+  text-align:left;
+  padding-left: 16px;
+}
+.select .selectBtn::before {
+  content: "";
+  background: url(../img/add.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: 16px;
+  top: -5px;
+}
+.select .selectDropdown {
+  position: absolute;
+  top: 250%;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+  background: #fff;
+  visibility: hidden;
+  transition: 0.2s ease;
+  padding: 16px;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.select .selectDropdown .option {
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family: 'San Francisco Pro Display Regular';
+  font-size: 14px;
+  line-height: 140%;
+  color: #262626;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 36px;
+  margin-bottom: 8px;
+}
+.select .selectDropdown .option:nth-last-of-type(1) {
+  margin-bottom: 0;
+}
+.select .selectDropdown .option:hover {
+  background: #f8f8f8;
+}
+.select .selectDropdown.toggle {
+  visibility: visible;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+.contents1 {
+	display: none;
+  margin-top: 12px;
+}
+.popupContents {
+  display: flex;
+  flex-direction: column;
+}
+.flexContainer {
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+}
+.contents1 ul li {
+  font-family: 'San Francisco Pro Display Regular';
+  font-size: 14px;
+  line-height: 140%;
+  color: #898989;
+  text-align: left;
+  margin-bottom: 5px;
+}
+.heading1 img {
+  transition: all 0.3s;
+}
+.heading1.active img {
+  transform: rotate(180deg);
+  transition: all 0.3s;
+}
+.popupContentsDetailedText {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'San Francisco Pro Display Regular';
+  font-size: 14px;
+  line-height: 140%;
+  color: #262626;
+  width: 100%;
+  min-width: 100%;
+  padding-right: 11px;
+  box-sizing: border-box;
+}
+.boxClose {
+  display: none;
+}
+
+
 
 
 
@@ -3188,267 +3423,3 @@ a {
   }
 }
 
-
-
-.choiceForm {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.choiceContainer {
-  position: relative;
-  width: max-content;
-  height: 43px;
-  margin-bottom: 8px;
-  margin-right: 8px;
-  display: flex;
-}
-.choiceContainer :nth-last-of-type(1) {
-  margin-right: 0;
-}
-.choiceContainer label {
-  font-family: 'San Francisco Pro Display Regular';
-  font-weight: 500;
-  font-size: 11px;
-  line-height: 150%;
-  color: #714830;
-  padding: 12px 20px;
-  background: transparent;
-  border: 2px solid transparent;
-  border-radius: 4px;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-}
-.choiceContainer input {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-}
-.choiceContainer input:checked + label {
-  background: rgba(0, 0, 0, 0.04);
-  border: 2px solid rgba(0, 0, 0, 0.12);
-}
-.contents {
-  flex-wrap: wrap;
-  align-items: center;
-  background: transparent;
-  border: 2px solid #F2F2F2;
-  border-top: none;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.accordion {
-  max-width: 100%;
-  background: #FFFFFF;
-  margin-top: 16px;
-}
-.heading {
-  font-family: 'San Francisco Pro Display Regular';
-  font-weight: 500;
-  font-size: 11px;
-  line-height: 150%;
-  text-transform: uppercase;
-  padding: 12px 0;
-  border: 2px solid #F2F2F2;
-  border-radius: 4px;
-  color: #714830;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.heading img {
-  position: absolute;
-  left: 20px;
-  top: 12.5px;
-}
-.heading.marN.active {
-  margin-bottom: 0;
-}
-.marN {
-  margin-bottom: 16px;
-}
-.marN + .contents {
-  margin-bottom: 16px;
-}
-
-
-.heading::before {
-  content: '';
-  background: url(../img/selectArrows.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 12px;
-  height: 7px;
-  position: absolute;
-  right: 20px;
-  top: 15px;
-}
-.active.heading::before {
-  transform: rotate(-180deg);
-}
-.not-active.heading::before {
-  transform: rotate(0deg);
-}
-.contents {
-display: none;
-padding: 16px;
-}
-.heading .contents {
-  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
-  border-radius: 4px;
-}
-.accordion .heading:nth-of-type(1) .contents {
-  padding: 16px !important;
-}
-
-.active.heading {
-  border-bottom: 0;
-  border-radius: 4px 4px 0 0;
-}
-
-
-
-
-
-
-
-.accordion1 {
-  width: 100%;
-}
-
-.select {
-  position: relative;
-  width: 100%;
-}
-.select .selectBtn {
-  box-sizing: border-box;
-  width: 100%;
-  cursor: pointer;
-  position: relative;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-  user-select: none;
-  font-family: 'San Francisco Pro Display Regular';
-  font-size: 14px;
-  line-height: 140%;
-  color: #262626;
-  text-align:left;
-  padding-left: 16px;
-}
-.select .selectBtn::before {
-  content: "";
-  background: url(../img/add.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 32px;
-  height: 32px;
-  position: absolute;
-  right: 16px;
-  top: -5px;
-}
-.select .selectDropdown {
-  position: absolute;
-  top: 250%;
-  width: 100%;
-  overflow: hidden;
-  z-index: 1;
-  background: #fff;
-  visibility: hidden;
-  transition: 0.2s ease;
-  padding: 16px;
-  box-sizing: border-box;
-  border-radius: 4px;
-}
-.select .selectDropdown .option {
-  box-sizing: border-box;
-  cursor: pointer;
-  font-family: 'San Francisco Pro Display Regular';
-  font-size: 14px;
-  line-height: 140%;
-  color: #262626;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  height: 36px;
-  margin-bottom: 8px;
-}
-.select .selectDropdown .option:nth-last-of-type(1) {
-  margin-bottom: 0;
-}
-.select .selectDropdown .option:hover {
-  background: #f8f8f8;
-}
-.select .selectDropdown.toggle {
-  visibility: visible;
-  -webkit-transform: scale(1, 1);
-          transform: scale(1, 1);
-}
-.contents1 {
-	display: none;
-  margin-top: 12px;
-}
-.popupContents {
-  display: flex;
-  flex-direction: column;
-}
-.flexContainer {
-  display: flex;
-  height: 100%;
-  overflow: hidden;
-}
-.contents1 ul li {
-  font-family: 'San Francisco Pro Display Regular';
-  font-size: 14px;
-  line-height: 140%;
-  color: #898989;
-  text-align: left;
-  margin-bottom: 5px;
-}
-.heading1 img {
-  transition: all 0.3s;
-}
-.heading1.active img {
-  transform: rotate(180deg);
-  transition: all 0.3s;
-}
-.popupContentsDetailedText {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-family: 'San Francisco Pro Display Regular';
-  font-size: 14px;
-  line-height: 140%;
-  color: #262626;
-  width: 100%;
-  min-width: 100%;
-  padding-right: 11px;
-  box-sizing: border-box;
-}
-.boxClose {
-  display: none;
-}
