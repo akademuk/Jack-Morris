@@ -2091,7 +2091,9 @@ a {
   right: 11px;
   top: -1px;
 }
-
+.banner2Img {
+  object-position: left -150px;
+}
 
 
 
@@ -2190,6 +2192,23 @@ a {
   }
   .shoppingLeftContentSectionLeft {
     width: 50%;
+  }
+}
+@media (min-width: 1350px) {
+  .step1 .popup__content {
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+  }
+  .step2 .popup__content {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .step3 .popup__content {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 @media (max-width: 1200px) {
