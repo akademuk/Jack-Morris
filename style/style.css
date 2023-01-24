@@ -3026,6 +3026,12 @@ padding: 16px;
     left: 22px;
     top: 25px;
   }
+    .basket {
+    right: 80px;
+  }
+  .logo {
+    margin-left: 0;
+  }
 }
 @media (max-width: 992px) {
   .logo {
@@ -3484,6 +3490,9 @@ padding: 16px;
   .originSectionDes {
     display: none;
   }
+    .basket {
+    right: 50px;
+  }
 }
 @media (max-width: 576px)  {
   .looks {
@@ -3494,13 +3503,21 @@ padding: 16px;
     background-size: contain, cover;
     background-repeat: no-repeat;
   }
+    .logo img {
+    max-width: 50% !important;
+  }
+  .logo a {
+    display: flex;
+    justify-content: center;
+  }
+  .basket {
+    right: 50px;
+  }
 }
 @media (max-width: 375px) {
   .looks  {
     height: 1000px;
   }
-  .logo img {
-    max-width: 50% !important;
-  }
+
 }
 
