@@ -3027,7 +3027,7 @@ padding: 16px;
     top: 25px;
   }
     .basket {
-    right: 80px;
+    right: 120px;
   }
   .logo {
     margin-left: 0;
@@ -3491,7 +3491,7 @@ padding: 16px;
     display: none;
   }
     .basket {
-    right: 50px;
+    right: 80px;
   }
 }
 @media (max-width: 576px)  {
@@ -3504,7 +3504,7 @@ padding: 16px;
     background-repeat: no-repeat;
   }
     .logo img {
-    max-width: 50% !important;
+    max-width: 65% !important;
   }
   .logo a {
     display: flex;
@@ -3519,5 +3519,17 @@ padding: 16px;
     height: 1000px;
   }
 
+}
+@media (max-width: 350px) {
+  .looks  {
+    height: 1000px;
+  }
+  header {
+    padding-left: 16px;
+    justify-content: flex-start;
+  }
+  .logo a {
+    justify-content: flex-start;
+  }
 }
 
